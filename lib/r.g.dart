@@ -114,6 +114,11 @@ class _R_Image_AssetResource {
   final test = const AssetResource("assets/images/test.png", packageName: R.package);
 
 
+  /// asset: "assets/images/test_+-.·!@&$￥.png"
+  // ignore: non_constant_identifier_names
+  final test________$_ = const AssetResource("assets/images/test_+-.·!@&\$￥.png", packageName: R.package);
+
+
   /// asset: "assets/images/test_sameName.gif"
   // ignore: non_constant_identifier_names
   final test_sameName_gif = const AssetResource("assets/images/test_sameName.gif", packageName: R.package);
@@ -207,6 +212,12 @@ class _R_Image {
   // ignore: non_constant_identifier_names
   AssetImage test() {
     return AssetImage(asset.test.keyName);
+  }
+
+  /// asset: "assets/images/test_+-.·!@&$￥.png"
+  // ignore: non_constant_identifier_names
+  AssetImage test________$_() {
+    return AssetImage(asset.test________$_.keyName);
   }
 
   /// asset: "assets/images/test_sameName.gif"

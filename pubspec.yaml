@@ -26,6 +26,7 @@ flutter:
   - packages/flutter_r_demo/assets/images/_test_begin_with_character_.png
   - packages/flutter_r_demo/assets/images/test.png
   - packages/flutter_r_demo/assets/images/test.svg
+  - packages/flutter_r_demo/assets/images/test_+-.·!@&$￥.png
   - packages/flutter_r_demo/assets/images/test_+-.·!@&$￥.svg
   - packages/flutter_r_demo/assets/images/test_sameName.gif
   - packages/flutter_r_demo/assets/images/test_sameName.jpg
