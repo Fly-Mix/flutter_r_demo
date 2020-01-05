@@ -11,6 +11,7 @@ dependencies:
   r_dart_library:
     git:
       url: https://github.com/YK-Unit/r_dart_library.git
+      ref: 0.2.0
 dev_dependencies:
   flutter_test:
     sdk: flutter

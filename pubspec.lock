@@ -148,8 +148,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: HEAD
-      resolved-ref: "086c9305e8ea68eb9466d034367a333d24b61f28"
+      ref: "0.2.0"
+      resolved-ref: aca9d1fea6e793876e47d2157ab534a095018054
       url: "https://github.com/YK-Unit/r_dart_library.git"
     source: git
     version: "0.2.0"
