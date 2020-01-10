@@ -6,7 +6,7 @@
 // tree, read text, and verify that the values of widget properties are correct.
 
 import 'package:flutter_r_demo/r.g.dart' as RGenerated;
-import 'package:flutter_r_demo/standar.r.g.dart' as RExpectation;
+import 'package:flutter_r_demo/standard.r.g.dart' as RExpectation;
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
