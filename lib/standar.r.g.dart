@@ -3,6 +3,7 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:path/path.dart' as path;
+// ignore: unused_import
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:r_dart_library/asset_svg.dart';
 
@@ -74,67 +75,67 @@ class AssetResource {
     return dirname;
   }
 }
-      
+
 // ignore: camel_case_types
 class _R_Image_AssetResource {
   const _R_Image_AssetResource();
 
   /// asset: "assets/images/$_test_begin_with_character$.png"
   // ignore: non_constant_identifier_names
-  final a$_test_begin_with_character$ = const AssetResource("assets/images/\$_test_begin_with_character\$.png", packageName: R.package);
-
+  final a$_test_begin_with_character$ = const AssetResource(
+      "assets/images/\$_test_begin_with_character\$.png",
+      packageName: R.package);
 
   /// asset: "assets/images/test_image_asset_variant_1.png"
   // ignore: non_constant_identifier_names
-  final test_image_asset_variant_1 = const AssetResource("assets/images/test_image_asset_variant_1.png", packageName: R.package);
-
+  final test_image_asset_variant_1 =
+      const AssetResource("assets/images/test_image_asset_variant_1.png", packageName: R.package);
 
   /// asset: "assets/images/test_image_asset_variant_2.png"
   // ignore: non_constant_identifier_names
-  final test_image_asset_variant_2 = const AssetResource("assets/images/test_image_asset_variant_2.png", packageName: R.package);
-
+  final test_image_asset_variant_2 =
+      const AssetResource("assets/images/test_image_asset_variant_2.png", packageName: R.package);
 
   /// asset: "assets/images/5_test_begin_with_number.png"
   // ignore: non_constant_identifier_names
-  final a5_test_begin_with_number = const AssetResource("assets/images/5_test_begin_with_number.png", packageName: R.package);
-
+  final a5_test_begin_with_number =
+      const AssetResource("assets/images/5_test_begin_with_number.png", packageName: R.package);
 
   /// asset: "assets/images/C_test_begin_with_capitalize.png"
   // ignore: non_constant_identifier_names
-  final c_test_begin_with_capitalize = const AssetResource("assets/images/C_test_begin_with_capitalize.png", packageName: R.package);
-
+  final c_test_begin_with_capitalize =
+      const AssetResource("assets/images/C_test_begin_with_capitalize.png", packageName: R.package);
 
   /// asset: "assets/images/_test_begin_with_character_.png"
   // ignore: non_constant_identifier_names
-  final a_test_begin_with_character_ = const AssetResource("assets/images/_test_begin_with_character_.png", packageName: R.package);
-
+  final a_test_begin_with_character_ =
+      const AssetResource("assets/images/_test_begin_with_character_.png", packageName: R.package);
 
   /// asset: "assets/images/test.png"
   // ignore: non_constant_identifier_names
   final test = const AssetResource("assets/images/test.png", packageName: R.package);
 
-
   /// asset: "assets/images/test_+-.·!@&$￥.png"
   // ignore: non_constant_identifier_names
-  final test________$_ = const AssetResource("assets/images/test_+-.·!@&\$￥.png", packageName: R.package);
-
+  final test________$_ =
+      const AssetResource("assets/images/test_+-.·!@&\$￥.png", packageName: R.package);
 
   /// asset: "assets/images/test_sameName.gif"
   // ignore: non_constant_identifier_names
-  final test_sameName_gif = const AssetResource("assets/images/test_sameName.gif", packageName: R.package);
-
+  final test_sameName_gif =
+      const AssetResource("assets/images/test_sameName.gif", packageName: R.package);
 
   /// asset: "assets/images/test_sameName.jpg"
   // ignore: non_constant_identifier_names
-  final test_sameName_jpg = const AssetResource("assets/images/test_sameName.jpg", packageName: R.package);
-
+  final test_sameName_jpg =
+      const AssetResource("assets/images/test_sameName.jpg", packageName: R.package);
 
   /// asset: "assets/images/test_sameName.png"
   // ignore: non_constant_identifier_names
-  final test_sameName = const AssetResource("assets/images/test_sameName.png", packageName: R.package);
-
+  final test_sameName =
+      const AssetResource("assets/images/test_sameName.png", packageName: R.package);
 }
-      
+
 // ignore: camel_case_types
 class _R_Svg_AssetResource {
   const _R_Svg_AssetResource();
@@ -143,13 +144,12 @@ class _R_Svg_AssetResource {
   // ignore: non_constant_identifier_names
   final test = const AssetResource("assets/images/test.svg", packageName: R.package);
 
-
   /// asset: "assets/images/test_+-.·!@&$￥.svg"
   // ignore: non_constant_identifier_names
-  final test________$_ = const AssetResource("assets/images/test_+-.·!@&\$￥.svg", packageName: R.package);
-
+  final test________$_ =
+      const AssetResource("assets/images/test_+-.·!@&\$￥.svg", packageName: R.package);
 }
-      
+
 // ignore: camel_case_types
 class _R_Text_AssetResource {
   const _R_Text_AssetResource();
@@ -158,13 +158,11 @@ class _R_Text_AssetResource {
   // ignore: non_constant_identifier_names
   final test_json = const AssetResource("assets/jsons/test.json", packageName: R.package);
 
-
   /// asset: "assets/yamls/test.yaml"
   // ignore: non_constant_identifier_names
   final test_yaml = const AssetResource("assets/yamls/test.yaml", packageName: R.package);
-
 }
-      
+
 /// This `_R_Image` class is generated and contains references to static non-svg type image asset resources.
 // ignore: camel_case_types
 class _R_Image {
@@ -238,7 +236,7 @@ class _R_Image {
     return AssetImage(asset.test_sameName.keyName);
   }
 }
-      
+
 /// This `_R_Svg` class is generated and contains references to static svg type image asset resources.
 // ignore: camel_case_types
 class _R_Svg {
@@ -260,7 +258,7 @@ class _R_Svg {
     return imageProvider;
   }
 }
-      
+
 /// This `_R_Text` class is generated and contains references to static text asset resources.
 // ignore: camel_case_types
 class _R_Text {
