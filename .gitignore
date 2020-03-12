@@ -79,5 +79,3 @@ build/
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 .vscode/
 example/ios/Flutter/flutter_export_environment.sh
-
-lib/r.g.dart

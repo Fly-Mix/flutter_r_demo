@@ -18,8 +18,10 @@ flutter:
   uses-material-design: true
   assets:
     - packages/flutter_r_demo/assets/images/$_test_begin_with_character$.png
+    - packages/flutter_r_demo/assets/images/1.5x.png
     - packages/flutter_r_demo/assets/images/test_image_asset_variant_1.png
     - packages/flutter_r_demo/assets/images/test_image_asset_variant_2.png
+    - packages/flutter_r_demo/assets/images/only_3x.png
     - packages/flutter_r_demo/assets/images/5_test_begin_with_number.png
     - packages/flutter_r_demo/assets/images/C_test_begin_with_capitalize.png
     - packages/flutter_r_demo/assets/images/_test_begin_with_character_.png
