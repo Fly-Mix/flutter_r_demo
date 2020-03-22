@@ -95,11 +95,11 @@ class _MyHomePageState extends State<MyHomePage> {
       image: R.svg.test(width: 100, height: 100),
     );
 
-    var amiri_TextWidget_1 = Text("test Amiri字体",
+    var amiri_TextWidget_1 = Text("test Amiri 字体",
         textAlign: TextAlign.center,
         style: TextStyle(fontFamily: R.fontFamily.amiri, fontWeight: FontWeight.w900));
 
-    var amiri_TextWidget_2 = Text("test Amiri字体",
+    var amiri_TextWidget_2 = Text("test Amiri 字体",
         textAlign: TextAlign.center,
         style: TextStyle(
             fontFamily: R.fontFamily.amiri,
@@ -107,10 +107,17 @@ class _MyHomePageState extends State<MyHomePage> {
             fontWeight: FontWeight.bold));
 
     var baloo_Thambi_2_TextWidget = Text("test Baloo_Thambi_2 字体",
-        textAlign: TextAlign.center, style: TextStyle(fontFamily: R.fontFamily.baloo_Thambi_2));
+        textAlign: TextAlign.center,
+        style: TextStyle(
+          fontFamily: R.fontFamily.baloo_Thambi_2,
+        ));
 
     var liu_Jian_Mao_Cao_TextWidget = Text("test Liu_Jian_Mao_Cao 字体",
-        textAlign: TextAlign.center, style: TextStyle(fontFamily: R.fontFamily.liu_Jian_Mao_Cao));
+        textAlign: TextAlign.center,
+        style: TextStyle(
+          fontFamily: R.fontFamily.liu_Jian_Mao_Cao,
+          fontStyle: FontStyle.normal,
+        ));
 
     var noto_Sans_JP_TextWidget = Text("test Noto_Sans_JP 字体",
         textAlign: TextAlign.center, style: TextStyle(fontFamily: R.fontFamily.noto_Sans_JP));
