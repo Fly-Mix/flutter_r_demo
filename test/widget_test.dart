@@ -36,6 +36,15 @@ void main() {
       RExpectation.R.text.asset.test_yaml
     ];
 
+    List<String> allExpectationFontFamily = [
+      RExpectation.R.fontFamily.amiri,
+      RExpectation.R.fontFamily.baloo_Thambi_2,
+      RExpectation.R.fontFamily.dan_Zhai_Hang_Shu_Cai,
+      RExpectation.R.fontFamily.liu_Jian_Mao_Cao,
+      RExpectation.R.fontFamily.open_Sans,
+      RExpectation.R.fontFamily.roboto
+    ];
+
     List<RGenerated.AssetResource> allGeneratedImage = [
       RGenerated.R.image.asset.a$_test_begin_with_character$,
       RGenerated.R.image.asset.a5_test_begin_with_number,
@@ -60,6 +69,15 @@ void main() {
       RGenerated.R.text.asset.test_yaml
     ];
 
+    List<String> allGeneratedFontFamily = [
+      RExpectation.R.fontFamily.amiri,
+      RExpectation.R.fontFamily.baloo_Thambi_2,
+      RExpectation.R.fontFamily.dan_Zhai_Hang_Shu_Cai,
+      RExpectation.R.fontFamily.liu_Jian_Mao_Cao,
+      RExpectation.R.fontFamily.open_Sans,
+      RExpectation.R.fontFamily.roboto
+    ];
+
     for (var i = 0; i < allExpectationImage.length; i++) {
       final expectation = allExpectationImage[i];
       final generated = allGeneratedImage[i];
@@ -76,6 +94,12 @@ void main() {
       final expectation = allExpectationText[i];
       final generated = allGeneratedText[i];
       assert(expectation.assetName == generated.assetName);
+    }
+
+    for (var i = 0; i < allExpectationFontFamily.length; i++) {
+      final expectation = allExpectationFontFamily[i];
+      final generated = allGeneratedFontFamily[i];
+      assert(expectation == generated);
     }
   });
 }
