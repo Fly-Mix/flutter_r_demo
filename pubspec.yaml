@@ -17,6 +17,24 @@ dev_dependencies:
     sdk: flutter
 flutter:
   uses-material-design: true
+  assets:
+  - packages/flutter_r_demo/assets/images/$_test_begin_with_character$.png
+  - packages/flutter_r_demo/assets/images/1.5x.png
+  - packages/flutter_r_demo/assets/images/5_test_begin_with_number.png
+  - packages/flutter_r_demo/assets/images/C_test_begin_with_capitalize.png
+  - packages/flutter_r_demo/assets/images/_test_begin_with_character_.png
+  - packages/flutter_r_demo/assets/images/only_3x.png
+  - packages/flutter_r_demo/assets/images/test.png
+  - packages/flutter_r_demo/assets/images/test.svg
+  - packages/flutter_r_demo/assets/images/test_+-.·!@&$￥.png
+  - packages/flutter_r_demo/assets/images/test_+-.·!@&$￥.svg
+  - packages/flutter_r_demo/assets/images/test_image_asset_variant_1.png
+  - packages/flutter_r_demo/assets/images/test_image_asset_variant_2.png
+  - packages/flutter_r_demo/assets/images/test_sameName.gif
+  - packages/flutter_r_demo/assets/images/test_sameName.jpg
+  - packages/flutter_r_demo/assets/images/test_sameName.png
+  - packages/flutter_r_demo/assets/jsons/test.json
+  - packages/flutter_r_demo/assets/yamls/test.yaml
   fonts:
   - family: Amiri
     fonts:
@@ -37,14 +55,6 @@ flutter:
   - family: Liu_Jian_Mao_Cao
     fonts:
     - asset: packages/flutter_r_demo/assets/fonts/Liu_Jian_Mao_Cao/LiuJianMaoCao-Regular.ttf
-  - family: Noto_Sans_JP
-    fonts:
-    - asset: packages/flutter_r_demo/assets/fonts/Noto_Sans_JP/NotoSansJP-Regular.otf
-    - asset: packages/flutter_r_demo/assets/fonts/Noto_Sans_JP/NotoSansJP-Medium.otf
-    - asset: packages/flutter_r_demo/assets/fonts/Noto_Sans_JP/NotoSansJP-Light.otf
-    - asset: packages/flutter_r_demo/assets/fonts/Noto_Sans_JP/NotoSansJP-Thin.otf
-    - asset: packages/flutter_r_demo/assets/fonts/Noto_Sans_JP/NotoSansJP-Bold.otf
-    - asset: packages/flutter_r_demo/assets/fonts/Noto_Sans_JP/NotoSansJP-Black.otf
   - family: Open_Sans
     fonts:
     - asset: packages/flutter_r_demo/assets/fonts/Open_Sans/OpenSans-SemiBold.ttf
@@ -71,24 +81,6 @@ flutter:
     - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-Bold.ttf
     - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-Thin.ttf
     - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-Black.ttf
-  assets:
-  - packages/flutter_r_demo/assets/images/$_test_begin_with_character$.png
-  - packages/flutter_r_demo/assets/images/1.5x.png
-  - packages/flutter_r_demo/assets/images/5_test_begin_with_number.png
-  - packages/flutter_r_demo/assets/images/C_test_begin_with_capitalize.png
-  - packages/flutter_r_demo/assets/images/_test_begin_with_character_.png
-  - packages/flutter_r_demo/assets/images/only_3x.png
-  - packages/flutter_r_demo/assets/images/test.png
-  - packages/flutter_r_demo/assets/images/test.svg
-  - packages/flutter_r_demo/assets/images/test_+-.·!@&$￥.png
-  - packages/flutter_r_demo/assets/images/test_+-.·!@&$￥.svg
-  - packages/flutter_r_demo/assets/images/test_image_asset_variant_1.png
-  - packages/flutter_r_demo/assets/images/test_image_asset_variant_2.png
-  - packages/flutter_r_demo/assets/images/test_sameName.gif
-  - packages/flutter_r_demo/assets/images/test_sameName.jpg
-  - packages/flutter_r_demo/assets/images/test_sameName.png
-  - packages/flutter_r_demo/assets/jsons/test.json
-  - packages/flutter_r_demo/assets/yamls/test.yaml
 flr:
   core_version: 1.0.0
   assets:

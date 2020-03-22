@@ -119,8 +119,8 @@ class _MyHomePageState extends State<MyHomePage> {
           fontStyle: FontStyle.normal,
         ));
 
-    var noto_Sans_JP_TextWidget = Text("test Noto_Sans_JP 字体",
-        textAlign: TextAlign.center, style: TextStyle(fontFamily: R.fontFamily.noto_Sans_JP));
+    var open_Sans_TextWidget = Text("test Open_Sans 字体",
+        textAlign: TextAlign.center, style: TextStyle(fontFamily: R.fontFamily.open_Sans));
 
     var dan_Zhai_Hang_Shu_Cai_TextWidget = Text("test Dan_Zhai_Hang_Shu_Cai 字体",
         textAlign: TextAlign.center,
@@ -162,7 +162,7 @@ class _MyHomePageState extends State<MyHomePage> {
             amiri_TextWidget_2,
             baloo_Thambi_2_TextWidget,
             liu_Jian_Mao_Cao_TextWidget,
-            noto_Sans_JP_TextWidget,
+            open_Sans_TextWidget,
             dan_Zhai_Hang_Shu_Cai_TextWidget
           ],
         ),

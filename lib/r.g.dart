@@ -353,10 +353,6 @@ class _R_Font_Family {
   // ignore: non_constant_identifier_names
   final liu_Jian_Mao_Cao = "Liu_Jian_Mao_Cao";
 
-  /// font family: Noto_Sans_JP
-  // ignore: non_constant_identifier_names
-  final noto_Sans_JP = "Noto_Sans_JP";
-
   /// font family: Open_Sans
   // ignore: non_constant_identifier_names
   final open_Sans = "Open_Sans";
