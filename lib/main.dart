@@ -95,6 +95,33 @@ class _MyHomePageState extends State<MyHomePage> {
       image: R.svg.test(width: 100, height: 100),
     );
 
+    var amiri_TextWidget_1 = Text("test Amiri字体",
+        textAlign: TextAlign.center,
+        style: TextStyle(fontFamily: R.fontFamily.amiri, fontWeight: FontWeight.w900));
+
+    var amiri_TextWidget_2 = Text("test Amiri字体",
+        textAlign: TextAlign.center,
+        style: TextStyle(
+            fontFamily: R.fontFamily.amiri,
+            fontStyle: FontStyle.italic,
+            fontWeight: FontWeight.bold));
+
+    var baloo_Thambi_2_TextWidget = Text("test Baloo_Thambi_2 字体",
+        textAlign: TextAlign.center, style: TextStyle(fontFamily: R.fontFamily.baloo_Thambi_2));
+
+    var liu_Jian_Mao_Cao_TextWidget = Text("test Liu_Jian_Mao_Cao 字体",
+        textAlign: TextAlign.center, style: TextStyle(fontFamily: R.fontFamily.liu_Jian_Mao_Cao));
+
+    var noto_Sans_JP_TextWidget = Text("test Noto_Sans_JP 字体",
+        textAlign: TextAlign.center, style: TextStyle(fontFamily: R.fontFamily.noto_Sans_JP));
+
+    var dan_Zhai_Hang_Shu_Cai_TextWidget = Text("test Dan_Zhai_Hang_Shu_Cai 字体",
+        textAlign: TextAlign.center,
+        style: TextStyle(
+            fontFamily: R.fontFamily.dan_Zhai_Hang_Shu_Cai,
+            fontStyle: FontStyle.normal,
+            fontWeight: FontWeight.w900));
+
     return Scaffold(
       appBar: AppBar(
         // Here we take the value from the MyHomePage object that was created by
@@ -124,6 +151,12 @@ class _MyHomePageState extends State<MyHomePage> {
             Image(
               image: R.image.test_sameName_gif(),
             ),
+            amiri_TextWidget_1,
+            amiri_TextWidget_2,
+            baloo_Thambi_2_TextWidget,
+            liu_Jian_Mao_Cao_TextWidget,
+            noto_Sans_JP_TextWidget,
+            dan_Zhai_Hang_Shu_Cai_TextWidget
           ],
         ),
       ),
