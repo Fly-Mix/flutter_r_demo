@@ -349,6 +349,10 @@ class _R_Font_Family {
   // ignore: non_constant_identifier_names
   final dan_Zhai_Hang_Shu_Cai = "Dan_Zhai_Hang_Shu_Cai";
 
+  /// font family: IconFont
+  // ignore: non_constant_identifier_names
+  final iconFont = "IconFont";
+
   /// font family: Liu_Jian_Mao_Cao
   // ignore: non_constant_identifier_names
   final liu_Jian_Mao_Cao = "Liu_Jian_Mao_Cao";

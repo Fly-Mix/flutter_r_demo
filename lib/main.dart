@@ -129,6 +129,10 @@ class _MyHomePageState extends State<MyHomePage> {
             fontStyle: FontStyle.normal,
             fontWeight: FontWeight.w900));
 
+    var github_IconWidget = Icon(_MyIconData.github, color: Colors.blue);
+    var newYork_IconWidget = Icon(_MyIconData.newYork, color: Colors.red);
+    var fish_IconWidget = Icon(_MyIconData.fish, color: Colors.blue);
+
     return Scaffold(
       appBar: AppBar(
         // Here we take the value from the MyHomePage object that was created by
@@ -163,11 +167,30 @@ class _MyHomePageState extends State<MyHomePage> {
             baloo_Thambi_2_TextWidget,
             liu_Jian_Mao_Cao_TextWidget,
             open_Sans_TextWidget,
-            dan_Zhai_Hang_Shu_Cai_TextWidget
+            dan_Zhai_Hang_Shu_Cai_TextWidget,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[github_IconWidget, newYork_IconWidget, fish_IconWidget],
+            ),
           ],
         ),
       ),
       // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
+}
+
+class _MyIconData {
+  static String fontFamily = R.fontFamily.iconFont;
+
+  // the unicode of icon see: lib/assets/fonts/IconFont/iconfont.json
+
+  // github
+  static IconData github = IconData(0xe628, fontFamily: fontFamily, matchTextDirection: true);
+
+  // new york
+  static IconData newYork = IconData(0xe648, fontFamily: fontFamily, matchTextDirection: true);
+
+  // fish
+  static IconData fish = IconData(0xefd7, fontFamily: fontFamily, matchTextDirection: true);
 }

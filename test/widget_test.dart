@@ -42,7 +42,8 @@ void main() {
       RExpectation.R.fontFamily.dan_Zhai_Hang_Shu_Cai,
       RExpectation.R.fontFamily.liu_Jian_Mao_Cao,
       RExpectation.R.fontFamily.open_Sans,
-      RExpectation.R.fontFamily.roboto
+      RExpectation.R.fontFamily.roboto,
+      RExpectation.R.fontFamily.iconFont
     ];
 
     List<RGenerated.AssetResource> allGeneratedImage = [
@@ -75,7 +76,8 @@ void main() {
       RExpectation.R.fontFamily.dan_Zhai_Hang_Shu_Cai,
       RExpectation.R.fontFamily.liu_Jian_Mao_Cao,
       RExpectation.R.fontFamily.open_Sans,
-      RExpectation.R.fontFamily.roboto
+      RExpectation.R.fontFamily.roboto,
+      RExpectation.R.fontFamily.iconFont
     ];
 
     for (var i = 0; i < allExpectationImage.length; i++) {

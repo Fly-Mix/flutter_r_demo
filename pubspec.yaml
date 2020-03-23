@@ -51,6 +51,9 @@ flutter:
   - family: Dan_Zhai_Hang_Shu_Cai
     fonts:
     - asset: packages/flutter_r_demo/assets/fonts/Dan_Zhai_Hang_Shu_Cai/Dan_Zhai_Hang_Shu_Cai.ttc
+  - family: IconFont
+    fonts:
+    - asset: packages/flutter_r_demo/assets/fonts/IconFont/iconfont.ttf
   - family: Liu_Jian_Mao_Cao
     fonts:
     - asset: packages/flutter_r_demo/assets/fonts/Liu_Jian_Mao_Cao/LiuJianMaoCao-Regular.ttf
