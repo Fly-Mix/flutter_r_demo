@@ -189,6 +189,18 @@ class _R_Svg_AssetResource {
 class _R_Text_AssetResource {
   const _R_Text_AssetResource();
 
+  /// asset: assets/jsons/level1/level2/test_L2_dir.json
+  // ignore: non_constant_identifier_names
+  final test_L2_dir_json = const AssetResource(
+      "assets/jsons/level1/level2/test_L2_dir.json",
+      packageName: R.package);
+
+  /// asset: assets/jsons/level1/test_L1_dir.json
+  // ignore: non_constant_identifier_names
+  final test_L1_dir_json = const AssetResource(
+      "assets/jsons/level1/test_L1_dir.json",
+      packageName: R.package);
+
   /// asset: assets/jsons/test.json
   // ignore: non_constant_identifier_names
   final test_json =
@@ -316,6 +328,20 @@ class _R_Text {
   const _R_Text();
 
   final asset = const _R_Text_AssetResource();
+
+  /// asset: assets/jsons/level1/level2/test_L2_dir.json
+  // ignore: non_constant_identifier_names
+  Future<String> test_L2_dir_json() {
+    final str = rootBundle.loadString(asset.test_L2_dir_json.keyName);
+    return str;
+  }
+
+  /// asset: assets/jsons/level1/test_L1_dir.json
+  // ignore: non_constant_identifier_names
+  Future<String> test_L1_dir_json() {
+    final str = rootBundle.loadString(asset.test_L1_dir_json.keyName);
+    return str;
+  }
 
   /// asset: assets/jsons/test.json
   // ignore: non_constant_identifier_names

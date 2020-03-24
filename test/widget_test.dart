@@ -33,6 +33,8 @@ void main() {
 
     List<RExpectation.AssetResource> allExpectationText = [
       RExpectation.R.text.asset.test_json,
+      RExpectation.R.text.asset.test_L1_dir_json,
+      RExpectation.R.text.asset.test_L2_dir_json,
       RExpectation.R.text.asset.test_yaml
     ];
 
@@ -67,6 +69,8 @@ void main() {
 
     List<RGenerated.AssetResource> allGeneratedText = [
       RGenerated.R.text.asset.test_json,
+      RGenerated.R.text.asset.test_L1_dir_json,
+      RGenerated.R.text.asset.test_L2_dir_json,
       RGenerated.R.text.asset.test_yaml
     ];
 

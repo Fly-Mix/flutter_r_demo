@@ -32,6 +32,8 @@ flutter:
   - packages/flutter_r_demo/assets/images/test_sameName.gif
   - packages/flutter_r_demo/assets/images/test_sameName.jpg
   - packages/flutter_r_demo/assets/images/test_sameName.png
+  - packages/flutter_r_demo/assets/jsons/level1/level2/test_L2_dir.json
+  - packages/flutter_r_demo/assets/jsons/level1/test_L1_dir.json
   - packages/flutter_r_demo/assets/jsons/test.json
   - packages/flutter_r_demo/assets/yamls/test.yaml
   fonts:
