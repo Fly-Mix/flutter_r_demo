@@ -47,8 +47,8 @@ flutter:
     fonts:
     - asset: packages/flutter_r_demo/assets/fonts/Baloo_Thambi_2/BalooThambi2-Bold.ttf
     - asset: packages/flutter_r_demo/assets/fonts/Baloo_Thambi_2/BalooThambi2-ExtraBold.ttf
-    - asset: packages/flutter_r_demo/assets/fonts/Baloo_Thambi_2/BalooThambi2-Regular.ttf
     - asset: packages/flutter_r_demo/assets/fonts/Baloo_Thambi_2/BalooThambi2-Medium.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Baloo_Thambi_2/BalooThambi2-Regular.ttf
     - asset: packages/flutter_r_demo/assets/fonts/Baloo_Thambi_2/BalooThambi2-SemiBold.ttf
   - family: Dan_Zhai_Hang_Shu_Cai
     fonts:
@@ -61,30 +61,30 @@ flutter:
     - asset: packages/flutter_r_demo/assets/fonts/Liu_Jian_Mao_Cao/LiuJianMaoCao-Regular.ttf
   - family: Open_Sans
     fonts:
-    - asset: packages/flutter_r_demo/assets/fonts/Open_Sans/OpenSans-SemiBold.ttf
-    - asset: packages/flutter_r_demo/assets/fonts/Open_Sans/OpenSans-Light.ttf
-    - asset: packages/flutter_r_demo/assets/fonts/Open_Sans/OpenSans-Italic.ttf
-    - asset: packages/flutter_r_demo/assets/fonts/Open_Sans/OpenSans-ExtraBold.ttf
-    - asset: packages/flutter_r_demo/assets/fonts/Open_Sans/OpenSans-LightItalic.ttf
     - asset: packages/flutter_r_demo/assets/fonts/Open_Sans/OpenSans-Bold.ttf
-    - asset: packages/flutter_r_demo/assets/fonts/Open_Sans/OpenSans-SemiBoldItalic.ttf
-    - asset: packages/flutter_r_demo/assets/fonts/Open_Sans/OpenSans-ExtraBoldItalic.ttf
-    - asset: packages/flutter_r_demo/assets/fonts/Open_Sans/OpenSans-Regular.ttf
     - asset: packages/flutter_r_demo/assets/fonts/Open_Sans/OpenSans-BoldItalic.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Open_Sans/OpenSans-ExtraBold.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Open_Sans/OpenSans-ExtraBoldItalic.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Open_Sans/OpenSans-Italic.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Open_Sans/OpenSans-Light.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Open_Sans/OpenSans-LightItalic.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Open_Sans/OpenSans-Regular.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Open_Sans/OpenSans-SemiBold.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Open_Sans/OpenSans-SemiBoldItalic.ttf
   - family: Roboto
     fonts:
-    - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-Medium.ttf
-    - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-Light.ttf
-    - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-Regular.ttf
-    - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-MediumItalic.ttf
-    - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-ThinItalic.ttf
-    - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-BoldItalic.ttf
-    - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-LightItalic.ttf
-    - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-Italic.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-Black.ttf
     - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-BlackItalic.ttf
     - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-Bold.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-BoldItalic.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-Italic.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-Light.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-LightItalic.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-Medium.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-MediumItalic.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-Regular.ttf
     - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-Thin.ttf
-    - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-Black.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-ThinItalic.ttf
 flr:
   core_version: 1.0.0
   assets:
