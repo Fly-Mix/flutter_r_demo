@@ -44,8 +44,7 @@ class R {
 /// - fileExtname：.png
 class AssetResource {
   /// Creates an object to hold the asset resource’s metadata.
-  const AssetResource(this.assetName, {this.packageName})
-      : assert(assetName != null);
+  const AssetResource(this.assetName, {this.packageName}) : assert(assetName != null);
 
   /// The name of the main asset from the set of asset resources to choose from.
   final String assetName;
@@ -56,8 +55,7 @@ class AssetResource {
   /// The name used to generate the key to obtain the asset resource. For local assets
   /// this is [assetName], and for assets from packages the [assetName] is
   /// prefixed 'packages/<package_name>/'.
-  String get keyName =>
-      packageName == null ? assetName : "packages/$packageName/$assetName";
+  String get keyName => packageName == null ? assetName : "packages/$packageName/$assetName";
 
   /// The file basename of the asset resource.
   String get fileBasename {
@@ -102,71 +100,60 @@ class _R_Image_AssetResource {
 
   /// asset: assets/images/1.5x.png
   // ignore: non_constant_identifier_names
-  final a1_5x =
-      const AssetResource("assets/images/1.5x.png", packageName: R.package);
+  final a1_5x = const AssetResource("assets/images/1.5x.png", packageName: R.package);
 
   /// asset: assets/images/5_test_begin_with_number.png
   // ignore: non_constant_identifier_names
-  final a5_test_begin_with_number = const AssetResource(
-      "assets/images/5_test_begin_with_number.png",
-      packageName: R.package);
+  final a5_test_begin_with_number =
+      const AssetResource("assets/images/5_test_begin_with_number.png", packageName: R.package);
 
   /// asset: assets/images/C_test_begin_with_capitalize.png
   // ignore: non_constant_identifier_names
-  final c_test_begin_with_capitalize = const AssetResource(
-      "assets/images/C_test_begin_with_capitalize.png",
-      packageName: R.package);
+  final c_test_begin_with_capitalize =
+      const AssetResource("assets/images/C_test_begin_with_capitalize.png", packageName: R.package);
 
   /// asset: assets/images/_test_begin_with_character_.png
   // ignore: non_constant_identifier_names
-  final a_test_begin_with_character_ = const AssetResource(
-      "assets/images/_test_begin_with_character_.png",
-      packageName: R.package);
+  final a_test_begin_with_character_ =
+      const AssetResource("assets/images/_test_begin_with_character_.png", packageName: R.package);
 
   /// asset: assets/images/only_3x.png
   // ignore: non_constant_identifier_names
-  final only_3x =
-      const AssetResource("assets/images/only_3x.png", packageName: R.package);
+  final only_3x = const AssetResource("assets/images/only_3x.png", packageName: R.package);
 
   /// asset: assets/images/test.png
   // ignore: non_constant_identifier_names
-  final test =
-      const AssetResource("assets/images/test.png", packageName: R.package);
+  final test = const AssetResource("assets/images/test.png", packageName: R.package);
 
   /// asset: assets/images/test_+-.·!@&$￥.png
   // ignore: non_constant_identifier_names
-  final test________$_ = const AssetResource(
-      "assets/images/test_+-.·!@&\$￥.png",
-      packageName: R.package);
+  final test________$_ =
+      const AssetResource("assets/images/test_+-.·!@&\$￥.png", packageName: R.package);
 
   /// asset: assets/images/test_image_asset_variant_1.png
   // ignore: non_constant_identifier_names
-  final test_image_asset_variant_1 = const AssetResource(
-      "assets/images/test_image_asset_variant_1.png",
-      packageName: R.package);
+  final test_image_asset_variant_1 =
+      const AssetResource("assets/images/test_image_asset_variant_1.png", packageName: R.package);
 
   /// asset: assets/images/test_image_asset_variant_2.png
   // ignore: non_constant_identifier_names
-  final test_image_asset_variant_2 = const AssetResource(
-      "assets/images/test_image_asset_variant_2.png",
-      packageName: R.package);
+  final test_image_asset_variant_2 =
+      const AssetResource("assets/images/test_image_asset_variant_2.png", packageName: R.package);
 
   /// asset: assets/images/test_sameName.gif
   // ignore: non_constant_identifier_names
-  final test_sameName_gif = const AssetResource(
-      "assets/images/test_sameName.gif",
-      packageName: R.package);
+  final test_sameName_gif =
+      const AssetResource("assets/images/test_sameName.gif", packageName: R.package);
 
   /// asset: assets/images/test_sameName.jpg
   // ignore: non_constant_identifier_names
-  final test_sameName_jpg = const AssetResource(
-      "assets/images/test_sameName.jpg",
-      packageName: R.package);
+  final test_sameName_jpg =
+      const AssetResource("assets/images/test_sameName.jpg", packageName: R.package);
 
   /// asset: assets/images/test_sameName.png
   // ignore: non_constant_identifier_names
-  final test_sameName = const AssetResource("assets/images/test_sameName.png",
-      packageName: R.package);
+  final test_sameName =
+      const AssetResource("assets/images/test_sameName.png", packageName: R.package);
 }
 
 // ignore: camel_case_types
@@ -175,14 +162,12 @@ class _R_Svg_AssetResource {
 
   /// asset: assets/images/test.svg
   // ignore: non_constant_identifier_names
-  final test =
-      const AssetResource("assets/images/test.svg", packageName: R.package);
+  final test = const AssetResource("assets/images/test.svg", packageName: R.package);
 
   /// asset: assets/images/test_+-.·!@&$￥.svg
   // ignore: non_constant_identifier_names
-  final test________$_ = const AssetResource(
-      "assets/images/test_+-.·!@&\$￥.svg",
-      packageName: R.package);
+  final test________$_ =
+      const AssetResource("assets/images/test_+-.·!@&\$￥.svg", packageName: R.package);
 }
 
 // ignore: camel_case_types
@@ -191,25 +176,21 @@ class _R_Text_AssetResource {
 
   /// asset: assets/jsons/level1/level2/test_L2_dir.json
   // ignore: non_constant_identifier_names
-  final test_L2_dir_json = const AssetResource(
-      "assets/jsons/level1/level2/test_L2_dir.json",
-      packageName: R.package);
+  final test_L2_dir_json =
+      const AssetResource("assets/jsons/level1/level2/test_L2_dir.json", packageName: R.package);
 
   /// asset: assets/jsons/level1/test_L1_dir.json
   // ignore: non_constant_identifier_names
-  final test_L1_dir_json = const AssetResource(
-      "assets/jsons/level1/test_L1_dir.json",
-      packageName: R.package);
+  final test_L1_dir_json =
+      const AssetResource("assets/jsons/level1/test_L1_dir.json", packageName: R.package);
 
   /// asset: assets/jsons/test.json
   // ignore: non_constant_identifier_names
-  final test_json =
-      const AssetResource("assets/jsons/test.json", packageName: R.package);
+  final test_json = const AssetResource("assets/jsons/test.json", packageName: R.package);
 
   /// asset: assets/yamls/test.yaml
   // ignore: non_constant_identifier_names
-  final test_yaml =
-      const AssetResource("assets/yamls/test.yaml", packageName: R.package);
+  final test_yaml = const AssetResource("assets/yamls/test.yaml", packageName: R.package);
 }
 
 /// This `_R_Image` class is generated and contains references to static non-svg type image asset resources.
@@ -308,16 +289,14 @@ class _R_Svg {
   /// asset: assets/images/test.svg
   // ignore: non_constant_identifier_names
   AssetSvg test({@required double width, @required double height}) {
-    final imageProvider =
-        AssetSvg(asset.test.keyName, width: width, height: height);
+    final imageProvider = AssetSvg(asset.test.keyName, width: width, height: height);
     return imageProvider;
   }
 
   /// asset: assets/images/test_+-.·!@&$￥.svg
   // ignore: non_constant_identifier_names
   AssetSvg test________$_({@required double width, @required double height}) {
-    final imageProvider =
-        AssetSvg(asset.test________$_.keyName, width: width, height: height);
+    final imageProvider = AssetSvg(asset.test________$_.keyName, width: width, height: height);
     return imageProvider;
   }
 }

@@ -16,6 +16,26 @@ dev_dependencies:
     sdk: flutter
 flutter:
   uses-material-design: true
+  assets:
+  - packages/flutter_r_demo/assets/images/$_test_begin_with_character$.png
+  - packages/flutter_r_demo/assets/images/1.5x.png
+  - packages/flutter_r_demo/assets/images/5_test_begin_with_number.png
+  - packages/flutter_r_demo/assets/images/C_test_begin_with_capitalize.png
+  - packages/flutter_r_demo/assets/images/_test_begin_with_character_.png
+  - packages/flutter_r_demo/assets/images/only_3x.png
+  - packages/flutter_r_demo/assets/images/test.png
+  - packages/flutter_r_demo/assets/images/test.svg
+  - packages/flutter_r_demo/assets/images/test_+-.·!@&$￥.png
+  - packages/flutter_r_demo/assets/images/test_+-.·!@&$￥.svg
+  - packages/flutter_r_demo/assets/images/test_image_asset_variant_1.png
+  - packages/flutter_r_demo/assets/images/test_image_asset_variant_2.png
+  - packages/flutter_r_demo/assets/images/test_sameName.gif
+  - packages/flutter_r_demo/assets/images/test_sameName.jpg
+  - packages/flutter_r_demo/assets/images/test_sameName.png
+  - packages/flutter_r_demo/assets/jsons/level1/level2/test_L2_dir.json
+  - packages/flutter_r_demo/assets/jsons/level1/test_L1_dir.json
+  - packages/flutter_r_demo/assets/jsons/test.json
+  - packages/flutter_r_demo/assets/yamls/test.yaml
   fonts:
   - family: Amiri
     fonts:
@@ -70,32 +90,12 @@ flutter:
     - asset: packages/flutter_r_demo/assets/fonts/test_level_font/level1/level2/test_L2_font.ttf
     - asset: packages/flutter_r_demo/assets/fonts/test_level_font/level1/test_L1_font.ttf
     - asset: packages/flutter_r_demo/assets/fonts/test_level_font/test_level_font.ttf
-  assets:
-  - packages/flutter_r_demo/assets/images/$_test_begin_with_character$.png
-  - packages/flutter_r_demo/assets/images/1.5x.png
-  - packages/flutter_r_demo/assets/images/5_test_begin_with_number.png
-  - packages/flutter_r_demo/assets/images/C_test_begin_with_capitalize.png
-  - packages/flutter_r_demo/assets/images/_test_begin_with_character_.png
-  - packages/flutter_r_demo/assets/images/only_3x.png
-  - packages/flutter_r_demo/assets/images/test.png
-  - packages/flutter_r_demo/assets/images/test.svg
-  - packages/flutter_r_demo/assets/images/test_+-.·!@&$￥.png
-  - packages/flutter_r_demo/assets/images/test_+-.·!@&$￥.svg
-  - packages/flutter_r_demo/assets/images/test_image_asset_variant_1.png
-  - packages/flutter_r_demo/assets/images/test_image_asset_variant_2.png
-  - packages/flutter_r_demo/assets/images/test_sameName.gif
-  - packages/flutter_r_demo/assets/images/test_sameName.jpg
-  - packages/flutter_r_demo/assets/images/test_sameName.png
-  - packages/flutter_r_demo/assets/jsons/level1/level2/test_L2_dir.json
-  - packages/flutter_r_demo/assets/jsons/level1/test_L1_dir.json
-  - packages/flutter_r_demo/assets/jsons/test.json
-  - packages/flutter_r_demo/assets/yamls/test.yaml
 flr:
   core_version: 1.0.0
+  dartfmt_line_length: 100
   assets:
   - lib/assets/images
   - lib/assets/jsons
   - lib/assets/yamls
   fonts:
   - lib/assets/fonts
-  - lib/assets/jsons/level1/level2
