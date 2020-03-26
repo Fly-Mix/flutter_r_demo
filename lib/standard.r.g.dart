@@ -30,8 +30,8 @@ class R {
   /// This `R.text` struct is generated, and contains static references to static text asset resources.
   static const text = _R_Text();
 
-  /// This `R.fontFamily` struct is generated, and contains static references to static font resources.
-  static const fontFamily = _R_Font_Family();
+  /// This `R.fontFamily` struct is generated, and contains static references to static font asset resources.
+  static const fontFamily = _R_FontFamily();
 }
 
 /// Asset resource’s metadata class.
@@ -337,10 +337,10 @@ class _R_Text {
   }
 }
 
-/// This `_R_Font_Family` class is generated and contains references to static font resources.
+/// This `_R_FontFamily` class is generated and contains references to static font asset resources.
 // ignore: camel_case_types
-class _R_Font_Family {
-  const _R_Font_Family();
+class _R_FontFamily {
+  const _R_FontFamily();
 
   /// font family: Amiri
   // ignore: non_constant_identifier_names
@@ -369,4 +369,8 @@ class _R_Font_Family {
   /// font family: Roboto
   // ignore: non_constant_identifier_names
   final roboto = "Roboto";
+
+  /// font family: test_level_font
+  // ignore: non_constant_identifier_names
+  final test_level_font = "test_level_font";
 }
