@@ -1,3 +1,6 @@
+
+
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_r_demo/r.g.dart';
@@ -85,9 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // The Flutter framework has been optimized to make rerunning build methods
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
-    var normalImageWidget = Image(
-      image: R.image.test_image_asset_variant_2(),
-    );
+    var normalImageWidget = Image(width: 74, height: 74, image: R.image.test_jpg_variant_jpg());
 
     var svgImageWidget = Image(
       width: 100,

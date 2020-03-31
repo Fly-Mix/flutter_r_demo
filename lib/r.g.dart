@@ -130,6 +130,10 @@ class _R_Image_AssetResource {
   final test________$_ =
       const AssetResource("assets/images/test_+-.·!@&\$￥.png", packageName: R.package);
 
+  /// asset: assets/images/test_L2_dir.png
+  // ignore: non_constant_identifier_names
+  final test_L2_dir = const AssetResource("assets/images/test_L2_dir.png", packageName: R.package);
+
   /// asset: assets/images/test_image_asset_variant_1.png
   // ignore: non_constant_identifier_names
   final test_image_asset_variant_1 =
@@ -139,6 +143,11 @@ class _R_Image_AssetResource {
   // ignore: non_constant_identifier_names
   final test_image_asset_variant_2 =
       const AssetResource("assets/images/test_image_asset_variant_2.png", packageName: R.package);
+
+  /// asset: assets/images/test_image_asset_variant_3.png
+  // ignore: non_constant_identifier_names
+  final test_image_asset_variant_3 =
+      const AssetResource("assets/images/test_image_asset_variant_3.png", packageName: R.package);
 
   /// asset: assets/images/test_sameName.gif
   // ignore: non_constant_identifier_names
@@ -154,6 +163,27 @@ class _R_Image_AssetResource {
   // ignore: non_constant_identifier_names
   final test_sameName =
       const AssetResource("assets/images/test_sameName.png", packageName: R.package);
+
+  /// asset: assets/mutil-module-images/packet_fail.png
+  // ignore: non_constant_identifier_names
+  final packet_fail =
+      const AssetResource("assets/mutil-module-images/packet_fail.png", packageName: R.package);
+
+  /// asset: assets/mutil-module-images/packet_success.png
+  // ignore: non_constant_identifier_names
+  final packet_success =
+      const AssetResource("assets/mutil-module-images/packet_success.png", packageName: R.package);
+
+  /// asset: assets/mutil-module-images/packet_tips.png
+  // ignore: non_constant_identifier_names
+  final packet_tips =
+      const AssetResource("assets/mutil-module-images/packet_tips.png", packageName: R.package);
+
+  /// asset: assets/mutil-module-images/test_jpg_variant.jpg
+  // ignore: non_constant_identifier_names
+  final test_jpg_variant_jpg = const AssetResource(
+      "assets/mutil-module-images/test_jpg_variant.jpg",
+      packageName: R.package);
 }
 
 // ignore: camel_case_types
@@ -168,6 +198,16 @@ class _R_Svg_AssetResource {
   // ignore: non_constant_identifier_names
   final test________$_ =
       const AssetResource("assets/images/test_+-.·!@&\$￥.svg", packageName: R.package);
+
+  /// asset: assets/mutil-module-images/home_icon.svg
+  // ignore: non_constant_identifier_names
+  final home_icon =
+      const AssetResource("assets/mutil-module-images/home_icon.svg", packageName: R.package);
+
+  /// asset: assets/mutil-module-images/user_icon.svg
+  // ignore: non_constant_identifier_names
+  final user_icon =
+      const AssetResource("assets/mutil-module-images/user_icon.svg", packageName: R.package);
 }
 
 // ignore: camel_case_types
@@ -248,6 +288,12 @@ class _R_Image {
     return AssetImage(asset.test________$_.keyName);
   }
 
+  /// asset: assets/images/test_L2_dir.png
+  // ignore: non_constant_identifier_names
+  AssetImage test_L2_dir() {
+    return AssetImage(asset.test_L2_dir.keyName);
+  }
+
   /// asset: assets/images/test_image_asset_variant_1.png
   // ignore: non_constant_identifier_names
   AssetImage test_image_asset_variant_1() {
@@ -258,6 +304,12 @@ class _R_Image {
   // ignore: non_constant_identifier_names
   AssetImage test_image_asset_variant_2() {
     return AssetImage(asset.test_image_asset_variant_2.keyName);
+  }
+
+  /// asset: assets/images/test_image_asset_variant_3.png
+  // ignore: non_constant_identifier_names
+  AssetImage test_image_asset_variant_3() {
+    return AssetImage(asset.test_image_asset_variant_3.keyName);
   }
 
   /// asset: assets/images/test_sameName.gif
@@ -276,6 +328,30 @@ class _R_Image {
   // ignore: non_constant_identifier_names
   AssetImage test_sameName() {
     return AssetImage(asset.test_sameName.keyName);
+  }
+
+  /// asset: assets/mutil-module-images/packet_fail.png
+  // ignore: non_constant_identifier_names
+  AssetImage packet_fail() {
+    return AssetImage(asset.packet_fail.keyName);
+  }
+
+  /// asset: assets/mutil-module-images/packet_success.png
+  // ignore: non_constant_identifier_names
+  AssetImage packet_success() {
+    return AssetImage(asset.packet_success.keyName);
+  }
+
+  /// asset: assets/mutil-module-images/packet_tips.png
+  // ignore: non_constant_identifier_names
+  AssetImage packet_tips() {
+    return AssetImage(asset.packet_tips.keyName);
+  }
+
+  /// asset: assets/mutil-module-images/test_jpg_variant.jpg
+  // ignore: non_constant_identifier_names
+  AssetImage test_jpg_variant_jpg() {
+    return AssetImage(asset.test_jpg_variant_jpg.keyName);
   }
 }
 
@@ -297,6 +373,20 @@ class _R_Svg {
   // ignore: non_constant_identifier_names
   AssetSvg test________$_({@required double width, @required double height}) {
     final imageProvider = AssetSvg(asset.test________$_.keyName, width: width, height: height);
+    return imageProvider;
+  }
+
+  /// asset: assets/mutil-module-images/home_icon.svg
+  // ignore: non_constant_identifier_names
+  AssetSvg home_icon({@required double width, @required double height}) {
+    final imageProvider = AssetSvg(asset.home_icon.keyName, width: width, height: height);
+    return imageProvider;
+  }
+
+  /// asset: assets/mutil-module-images/user_icon.svg
+  // ignore: non_constant_identifier_names
+  AssetSvg user_icon({@required double width, @required double height}) {
+    final imageProvider = AssetSvg(asset.user_icon.keyName, width: width, height: height);
     return imageProvider;
   }
 }

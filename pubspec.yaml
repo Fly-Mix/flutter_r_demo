@@ -27,11 +27,19 @@ flutter:
   - packages/flutter_r_demo/assets/images/test.svg
   - packages/flutter_r_demo/assets/images/test_+-.·!@&$￥.png
   - packages/flutter_r_demo/assets/images/test_+-.·!@&$￥.svg
+  - packages/flutter_r_demo/assets/images/test_L2_dir.png
   - packages/flutter_r_demo/assets/images/test_image_asset_variant_1.png
   - packages/flutter_r_demo/assets/images/test_image_asset_variant_2.png
+  - packages/flutter_r_demo/assets/images/test_image_asset_variant_3.png
   - packages/flutter_r_demo/assets/images/test_sameName.gif
   - packages/flutter_r_demo/assets/images/test_sameName.jpg
   - packages/flutter_r_demo/assets/images/test_sameName.png
+  - packages/flutter_r_demo/assets/mutil-module-images/home_icon.svg
+  - packages/flutter_r_demo/assets/mutil-module-images/packet_fail.png
+  - packages/flutter_r_demo/assets/mutil-module-images/packet_success.png
+  - packages/flutter_r_demo/assets/mutil-module-images/packet_tips.png
+  - packages/flutter_r_demo/assets/mutil-module-images/test_jpg_variant.jpg
+  - packages/flutter_r_demo/assets/mutil-module-images/user_icon.svg
   - packages/flutter_r_demo/assets/jsons/level1/level2/test_L2_dir.json
   - packages/flutter_r_demo/assets/jsons/level1/test_L1_dir.json
   - packages/flutter_r_demo/assets/jsons/test.json
@@ -97,5 +105,6 @@ flr:
   - lib/assets/images
   - lib/assets/jsons
   - lib/assets/yamls
+  - lib/assets/mutil-module-images
   fonts:
   - lib/assets/fonts
