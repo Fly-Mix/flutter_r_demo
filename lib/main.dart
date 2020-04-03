@@ -1,6 +1,3 @@
-
-
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_r_demo/r.g.dart';
@@ -71,12 +68,12 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void _readTestJson() async {
-    var rawString = await R.text.test_json();
+    var rawString = await R.text.test_subdir_json();
     _alertMessage(rawString);
   }
 
   void _readTestYaml() async {
-    var rawString = await R.text.test_yaml();
+    var rawString = await R.text.test__yaml$2();
     _alertMessage(rawString);
   }
 
@@ -88,12 +85,12 @@ class _MyHomePageState extends State<MyHomePage> {
     // The Flutter framework has been optimized to make rerunning build methods
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
-    var normalImageWidget = Image(width: 74, height: 74, image: R.image.test_jpg_variant_jpg());
+    var normalImageWidget = Image(image: R.image.test_variant_subdir());
 
     var svgImageWidget = Image(
       width: 100,
       height: 100,
-      image: R.svg.test(width: 100, height: 100),
+      image: R.svg.test_svg(width: 100, height: 100),
     );
 
     var amiri_TextWidget_1 = Text("test Amiri 字体",
@@ -146,6 +143,27 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Text(
+              "--- Test Image Resource ---",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  fontFamily: R.fontFamily.roboto,
+                  fontStyle: FontStyle.normal,
+                  fontWeight: FontWeight.w900),
+            ),
+            normalImageWidget,
+            svgImageWidget,
+            Image(
+              image: R.image.test_sameName_gif(),
+            ),
+            Text(
+              "--- Test Text Resource ---",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  fontFamily: R.fontFamily.roboto,
+                  fontStyle: FontStyle.normal,
+                  fontWeight: FontWeight.w900),
+            ),
             CupertinoButton(
               child: Text(
                 "read  test.json",
@@ -158,10 +176,13 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               onPressed: _readTestYaml,
             ),
-            normalImageWidget,
-            svgImageWidget,
-            Image(
-              image: R.image.test_sameName_gif(),
+            Text(
+              "--- Test Font Resource ---",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  fontFamily: R.fontFamily.roboto,
+                  fontStyle: FontStyle.normal,
+                  fontWeight: FontWeight.w900),
             ),
             amiri_TextWidget_1,
             amiri_TextWidget_2,

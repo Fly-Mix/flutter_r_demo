@@ -17,33 +17,35 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-  - packages/flutter_r_demo/assets/images/$_test_begin_with_character$.png
-  - packages/flutter_r_demo/assets/images/1.5x.png
-  - packages/flutter_r_demo/assets/images/5_test_begin_with_number.png
-  - packages/flutter_r_demo/assets/images/C_test_begin_with_capitalize.png
-  - packages/flutter_r_demo/assets/images/_test_begin_with_character_.png
-  - packages/flutter_r_demo/assets/images/only_3x.png
-  - packages/flutter_r_demo/assets/images/test.png
-  - packages/flutter_r_demo/assets/images/test.svg
-  - packages/flutter_r_demo/assets/images/test_+-.·!@&$￥.png
-  - packages/flutter_r_demo/assets/images/test_+-.·!@&$￥.svg
-  - packages/flutter_r_demo/assets/images/test_L2_dir.png
-  - packages/flutter_r_demo/assets/images/test_image_asset_variant_1.png
-  - packages/flutter_r_demo/assets/images/test_image_asset_variant_2.png
-  - packages/flutter_r_demo/assets/images/test_image_asset_variant_3.png
-  - packages/flutter_r_demo/assets/images/test_sameName.gif
-  - packages/flutter_r_demo/assets/images/test_sameName.jpg
-  - packages/flutter_r_demo/assets/images/test_sameName.png
-  - packages/flutter_r_demo/assets/mutil-module-images/home_icon.svg
-  - packages/flutter_r_demo/assets/mutil-module-images/packet_fail.png
-  - packages/flutter_r_demo/assets/mutil-module-images/packet_success.png
-  - packages/flutter_r_demo/assets/mutil-module-images/packet_tips.png
-  - packages/flutter_r_demo/assets/mutil-module-images/test_jpg_variant.jpg
-  - packages/flutter_r_demo/assets/mutil-module-images/user_icon.svg
-  - packages/flutter_r_demo/assets/jsons/level1/level2/test_L2_dir.json
-  - packages/flutter_r_demo/assets/jsons/level1/test_L1_dir.json
+  - packages/flutter_r_demo/assets/images/test_asset_variants/3x/variant-subdir/test_variant-subdir.png
+  - packages/flutter_r_demo/assets/images/test_asset_variants/test_jpg_variant.jpg
+  - packages/flutter_r_demo/assets/images/test_asset_variants/test_no_variant.png
+  - packages/flutter_r_demo/assets/images/test_asset_variants/test_only_1.5x_variant.png
+  - packages/flutter_r_demo/assets/images/test_asset_variants/test_only_3x_variant.png
+  - packages/flutter_r_demo/assets/images/test_asset_variants/test_png_variant_1.png
+  - packages/flutter_r_demo/assets/images/test_asset_variants/test_png_variant_2.png
+  - packages/flutter_r_demo/assets/images/test_bad_images/$_test_begin_with_character$.png
+  - packages/flutter_r_demo/assets/images/test_bad_images/5_test_begin_with_number.png
+  - packages/flutter_r_demo/assets/images/test_bad_images/C_test_begin_with_capitalize.png
+  - packages/flutter_r_demo/assets/images/test_bad_images/_test_begin_with_character_.png
+  - packages/flutter_r_demo/assets/images/test_bad_images/test_+-.·!@&$￥.png
+  - packages/flutter_r_demo/assets/images/test_bad_images/test_UPPER_CASE.png
+  - packages/flutter_r_demo/assets/images/test_same_asset_id/test_same_asset_id!.png
+  - packages/flutter_r_demo/assets/images/test_same_asset_id/test_same_asset_id+.png
+  - packages/flutter_r_demo/assets/images/test_same_asset_id/test_same_asset_id-.png
+  - packages/flutter_r_demo/assets/images/test_same_asset_id/test_same_asset_id￥.png
+  - packages/flutter_r_demo/assets/images/test_same_name/test_sameName.gif
+  - packages/flutter_r_demo/assets/images/test_same_name/test_sameName.jpg
+  - packages/flutter_r_demo/assets/images/test_same_name/test_sameName.png
+  - packages/flutter_r_demo/assets/images/test_svg/3.0x/test_3.0x_svg.svg
+  - packages/flutter_r_demo/assets/images/test_svg/test_svg.svg
+  - packages/flutter_r_demo/assets/jsons/subdir/subsubdir/test_subsubdir.json
+  - packages/flutter_r_demo/assets/jsons/subdir/test_subdir.json
   - packages/flutter_r_demo/assets/jsons/test.json
   - packages/flutter_r_demo/assets/yamls/test.yaml
+  - packages/flutter_r_demo/assets/yamls/test_same_asset_id/test+.yaml
+  - packages/flutter_r_demo/assets/yamls/test_same_asset_id/test-.yaml
+  - packages/flutter_r_demo/assets/yamls/test_same_asset_id/test@.yaml
   fonts:
   - family: Amiri
     fonts:
@@ -99,12 +101,11 @@ flutter:
     - asset: packages/flutter_r_demo/assets/fonts/test_level_font/level1/test_L1_font.ttf
     - asset: packages/flutter_r_demo/assets/fonts/test_level_font/test_level_font.ttf
 flr:
-  core_version: 1.0.0
+  core_version: 2.0.0
   dartfmt_line_length: 100
   assets:
   - lib/assets/images
   - lib/assets/jsons
   - lib/assets/yamls
-  - lib/assets/mutil-module-images
   fonts:
   - lib/assets/fonts
