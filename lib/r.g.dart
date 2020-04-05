@@ -104,12 +104,6 @@ class _R_Image_AssetResource {
       "assets/images/test_asset_variants/test_jpg_variant.jpg",
       packageName: R.package);
 
-  /// asset: assets/images/test_asset_variants/test_no_variant.png
-  // ignore: non_constant_identifier_names
-  final test_no_variant = const AssetResource(
-      "assets/images/test_asset_variants/test_no_variant.png",
-      packageName: R.package);
-
   /// asset: assets/images/test_asset_variants/test_only_1.5x_variant.png
   // ignore: non_constant_identifier_names
   final test_only_1_5x_variant = const AssetResource(
@@ -120,6 +114,12 @@ class _R_Image_AssetResource {
   // ignore: non_constant_identifier_names
   final test_only_3x_variant = const AssetResource(
       "assets/images/test_asset_variants/test_only_3x_variant.png",
+      packageName: R.package);
+
+  /// asset: assets/images/test_asset_variants/test_only_main_asset.png
+  // ignore: non_constant_identifier_names
+  final test_only_main_asset = const AssetResource(
+      "assets/images/test_asset_variants/test_only_main_asset.png",
       packageName: R.package);
 
   /// asset: assets/images/test_asset_variants/test_png_variant_1.png
@@ -281,12 +281,6 @@ class _R_Image {
     return AssetImage(asset.test_jpg_variant_jpg.keyName);
   }
 
-  /// asset: assets/images/test_asset_variants/test_no_variant.png
-  // ignore: non_constant_identifier_names
-  AssetImage test_no_variant() {
-    return AssetImage(asset.test_no_variant.keyName);
-  }
-
   /// asset: assets/images/test_asset_variants/test_only_1.5x_variant.png
   // ignore: non_constant_identifier_names
   AssetImage test_only_1_5x_variant() {
@@ -297,6 +291,12 @@ class _R_Image {
   // ignore: non_constant_identifier_names
   AssetImage test_only_3x_variant() {
     return AssetImage(asset.test_only_3x_variant.keyName);
+  }
+
+  /// asset: assets/images/test_asset_variants/test_only_main_asset.png
+  // ignore: non_constant_identifier_names
+  AssetImage test_only_main_asset() {
+    return AssetImage(asset.test_only_main_asset.keyName);
   }
 
   /// asset: assets/images/test_asset_variants/test_png_variant_1.png

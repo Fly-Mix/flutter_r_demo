@@ -19,9 +19,9 @@ flutter:
   assets:
   - packages/flutter_r_demo/assets/images/test_asset_variants/3x/variant-subdir/test_variant-subdir.png
   - packages/flutter_r_demo/assets/images/test_asset_variants/test_jpg_variant.jpg
-  - packages/flutter_r_demo/assets/images/test_asset_variants/test_no_variant.png
   - packages/flutter_r_demo/assets/images/test_asset_variants/test_only_1.5x_variant.png
   - packages/flutter_r_demo/assets/images/test_asset_variants/test_only_3x_variant.png
+  - packages/flutter_r_demo/assets/images/test_asset_variants/test_only_main_asset.png
   - packages/flutter_r_demo/assets/images/test_asset_variants/test_png_variant_1.png
   - packages/flutter_r_demo/assets/images/test_asset_variants/test_png_variant_2.png
   - packages/flutter_r_demo/assets/images/test_bad_images/$_test_begin_with_character$.png
