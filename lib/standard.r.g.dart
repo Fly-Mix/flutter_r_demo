@@ -168,6 +168,12 @@ class _R_Image_AssetResource {
   final test_UPPER_CASE = const AssetResource("assets/images/test_bad_images/test_UPPER_CASE.png",
       packageName: R.package);
 
+  /// asset: assets/images/test_bad_images/test_good_character.png
+  // ignore: non_constant_identifier_names
+  final test_good_character = const AssetResource(
+      "assets/images/test_bad_images/test_good_character.png",
+      packageName: R.package);
+
   /// asset: assets/images/test_same_asset_id/test_same_asset_id!.png
   // ignore: non_constant_identifier_names
   final test_same_asset_id_ = const AssetResource(
@@ -195,17 +201,17 @@ class _R_Image_AssetResource {
   /// asset: assets/images/test_same_name/test_sameName.gif
   // ignore: non_constant_identifier_names
   final test_sameName_gif =
-  const AssetResource("assets/images/test_same_name/test_sameName.gif", packageName: R.package);
+      const AssetResource("assets/images/test_same_name/test_sameName.gif", packageName: R.package);
 
   /// asset: assets/images/test_same_name/test_sameName.jpg
   // ignore: non_constant_identifier_names
   final test_sameName_jpg =
-  const AssetResource("assets/images/test_same_name/test_sameName.jpg", packageName: R.package);
+      const AssetResource("assets/images/test_same_name/test_sameName.jpg", packageName: R.package);
 
   /// asset: assets/images/test_same_name/test_sameName.png
   // ignore: non_constant_identifier_names
   final test_sameName =
-  const AssetResource("assets/images/test_same_name/test_sameName.png", packageName: R.package);
+      const AssetResource("assets/images/test_same_name/test_sameName.png", packageName: R.package);
 }
 
 // ignore: camel_case_types
@@ -215,12 +221,12 @@ class _R_Svg_AssetResource {
   /// asset: assets/images/test_svg/3.0x/test_3.0x_svg.svg
   // ignore: non_constant_identifier_names
   final test_3_0x_svg =
-  const AssetResource("assets/images/test_svg/3.0x/test_3.0x_svg.svg", packageName: R.package);
+      const AssetResource("assets/images/test_svg/3.0x/test_3.0x_svg.svg", packageName: R.package);
 
   /// asset: assets/images/test_svg/test_svg.svg
   // ignore: non_constant_identifier_names
   final test_svg =
-  const AssetResource("assets/images/test_svg/test_svg.svg", packageName: R.package);
+      const AssetResource("assets/images/test_svg/test_svg.svg", packageName: R.package);
 }
 
 // ignore: camel_case_types
@@ -236,7 +242,7 @@ class _R_Text_AssetResource {
   /// asset: assets/jsons/subdir/test_subdir.json
   // ignore: non_constant_identifier_names
   final test_subdir_json =
-  const AssetResource("assets/jsons/subdir/test_subdir.json", packageName: R.package);
+      const AssetResource("assets/jsons/subdir/test_subdir.json", packageName: R.package);
 
   /// asset: assets/jsons/test.json
   // ignore: non_constant_identifier_names
@@ -249,17 +255,17 @@ class _R_Text_AssetResource {
   /// asset: assets/yamls/test_same_asset_id/test+.yaml
   // ignore: non_constant_identifier_names
   final test__yaml =
-  const AssetResource("assets/yamls/test_same_asset_id/test+.yaml", packageName: R.package);
+      const AssetResource("assets/yamls/test_same_asset_id/test+.yaml", packageName: R.package);
 
   /// asset: assets/yamls/test_same_asset_id/test-.yaml
   // ignore: non_constant_identifier_names
   final test__yaml$1 =
-  const AssetResource("assets/yamls/test_same_asset_id/test-.yaml", packageName: R.package);
+      const AssetResource("assets/yamls/test_same_asset_id/test-.yaml", packageName: R.package);
 
   /// asset: assets/yamls/test_same_asset_id/test@.yaml
   // ignore: non_constant_identifier_names
   final test__yaml$2 =
-  const AssetResource("assets/yamls/test_same_asset_id/test@.yaml", packageName: R.package);
+      const AssetResource("assets/yamls/test_same_asset_id/test@.yaml", packageName: R.package);
 }
 
 /// This `_R_Image` class is generated and contains references to static non-svg type image asset resources.
@@ -345,6 +351,12 @@ class _R_Image {
   // ignore: non_constant_identifier_names
   AssetImage test_UPPER_CASE() {
     return AssetImage(asset.test_UPPER_CASE.keyName);
+  }
+
+  /// asset: assets/images/test_bad_images/test_good_character.png
+  // ignore: non_constant_identifier_names
+  AssetImage test_good_character() {
+    return AssetImage(asset.test_good_character.keyName);
   }
 
   /// asset: assets/images/test_same_asset_id/test_same_asset_id!.png

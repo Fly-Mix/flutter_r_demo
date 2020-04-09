@@ -168,6 +168,12 @@ class _R_Image_AssetResource {
   final test_UPPER_CASE = const AssetResource("assets/images/test_bad_images/test_UPPER_CASE.png",
       packageName: R.package);
 
+  /// asset: assets/images/test_bad_images/test_good_character.png
+  // ignore: non_constant_identifier_names
+  final test_good_character = const AssetResource(
+      "assets/images/test_bad_images/test_good_character.png",
+      packageName: R.package);
+
   /// asset: assets/images/test_same_asset_id/test_same_asset_id!.png
   // ignore: non_constant_identifier_names
   final test_same_asset_id_ = const AssetResource(
@@ -345,6 +351,12 @@ class _R_Image {
   // ignore: non_constant_identifier_names
   AssetImage test_UPPER_CASE() {
     return AssetImage(asset.test_UPPER_CASE.keyName);
+  }
+
+  /// asset: assets/images/test_bad_images/test_good_character.png
+  // ignore: non_constant_identifier_names
+  AssetImage test_good_character() {
+    return AssetImage(asset.test_good_character.keyName);
   }
 
   /// asset: assets/images/test_same_asset_id/test_same_asset_id!.png

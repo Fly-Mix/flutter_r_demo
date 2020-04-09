@@ -30,6 +30,7 @@ flutter:
   - packages/flutter_r_demo/assets/images/test_bad_images/_test_begin_with_character_.png
   - packages/flutter_r_demo/assets/images/test_bad_images/test_+-.·!@&$￥.png
   - packages/flutter_r_demo/assets/images/test_bad_images/test_UPPER_CASE.png
+  - packages/flutter_r_demo/assets/images/test_bad_images/test_good_character.png
   - packages/flutter_r_demo/assets/images/test_same_asset_id/test_same_asset_id!.png
   - packages/flutter_r_demo/assets/images/test_same_asset_id/test_same_asset_id+.png
   - packages/flutter_r_demo/assets/images/test_same_asset_id/test_same_asset_id-.png

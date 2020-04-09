@@ -68,12 +68,12 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void _readTestJson() async {
-    var rawString = await R.text.test_subdir_json();
+    var rawString = await R.text.test_json();
     _alertMessage(rawString);
   }
 
   void _readTestYaml() async {
-    var rawString = await R.text.test__yaml$2();
+    var rawString = await R.text.test_yaml();
     _alertMessage(rawString);
   }
 
@@ -85,12 +85,16 @@ class _MyHomePageState extends State<MyHomePage> {
     // The Flutter framework has been optimized to make rerunning build methods
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
-    var normalImageWidget = Image(image: R.image.test_variant_subdir());
+    var normalImageWidget = Image(width: 100, height: 100, image: R.image.test_only_main_asset());
 
     var svgImageWidget = Image(
       width: 100,
       height: 100,
       image: R.svg.test_svg(width: 100, height: 100),
+    );
+
+    var gifImageWidget = Image(
+      image: R.image.test_sameName_gif(),
     );
 
     var amiri_TextWidget_1 = Text("test Amiri 字体",
@@ -153,9 +157,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             normalImageWidget,
             svgImageWidget,
-            Image(
-              image: R.image.test_sameName_gif(),
-            ),
+            gifImageWidget,
             Text(
               "--- Test Text Resource ---",
               textAlign: TextAlign.center,
