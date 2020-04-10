@@ -85,15 +85,55 @@ class _MyHomePageState extends State<MyHomePage> {
     // The Flutter framework has been optimized to make rerunning build methods
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
-    var normalImageWidget = Image(
-      image: R.image.test_image_asset_variant_2(),
-    );
+    var normalImageWidget = Image(width: 100, height: 100, image: R.image.test_only_main_asset());
 
     var svgImageWidget = Image(
       width: 100,
       height: 100,
-      image: R.svg.test(width: 100, height: 100),
+      image: R.svg.test_svg(width: 100, height: 100),
     );
+
+    var gifImageWidget = Image(
+      image: R.image.test_sameName_gif(),
+    );
+
+    var amiri_TextWidget_1 = Text("test Amiri 字体",
+        textAlign: TextAlign.center,
+        style: TextStyle(fontFamily: R.fontFamily.amiri, fontWeight: FontWeight.w900));
+
+    var amiri_TextWidget_2 = Text("test Amiri 字体",
+        textAlign: TextAlign.center,
+        style: TextStyle(
+            fontFamily: R.fontFamily.amiri,
+            fontStyle: FontStyle.italic,
+            fontWeight: FontWeight.bold));
+
+    var baloo_Thambi_2_TextWidget = Text("test Baloo_Thambi_2 字体",
+        textAlign: TextAlign.center,
+        style: TextStyle(
+          fontFamily: R.fontFamily.baloo_Thambi_2,
+        ));
+
+    var liu_Jian_Mao_Cao_TextWidget = Text("test Liu_Jian_Mao_Cao 字体",
+        textAlign: TextAlign.center,
+        style: TextStyle(
+          fontFamily: R.fontFamily.liu_Jian_Mao_Cao,
+          fontStyle: FontStyle.normal,
+        ));
+
+    var open_Sans_TextWidget = Text("test Open_Sans 字体",
+        textAlign: TextAlign.center, style: TextStyle(fontFamily: R.fontFamily.open_Sans));
+
+    var dan_Zhai_Hang_Shu_Cai_TextWidget = Text("test Dan_Zhai_Hang_Shu_Cai 字体",
+        textAlign: TextAlign.center,
+        style: TextStyle(
+            fontFamily: R.fontFamily.dan_Zhai_Hang_Shu_Cai,
+            fontStyle: FontStyle.normal,
+            fontWeight: FontWeight.w900));
+
+    var github_IconWidget = Icon(_MyIconData.github, color: Colors.blue);
+    var newYork_IconWidget = Icon(_MyIconData.newYork, color: Colors.red);
+    var fish_IconWidget = Icon(_MyIconData.fish, color: Colors.blue);
 
     return Scaffold(
       appBar: AppBar(
@@ -107,6 +147,25 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Text(
+              "--- Test Image Resource ---",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  fontFamily: R.fontFamily.roboto,
+                  fontStyle: FontStyle.normal,
+                  fontWeight: FontWeight.w900),
+            ),
+            normalImageWidget,
+            svgImageWidget,
+            gifImageWidget,
+            Text(
+              "--- Test Text Resource ---",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  fontFamily: R.fontFamily.roboto,
+                  fontStyle: FontStyle.normal,
+                  fontWeight: FontWeight.w900),
+            ),
             CupertinoButton(
               child: Text(
                 "read  test.json",
@@ -119,10 +178,23 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               onPressed: _readTestYaml,
             ),
-            normalImageWidget,
-            svgImageWidget,
-            Image(
-              image: R.image.test_sameName_gif(),
+            Text(
+              "--- Test Font Resource ---",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  fontFamily: R.fontFamily.roboto,
+                  fontStyle: FontStyle.normal,
+                  fontWeight: FontWeight.w900),
+            ),
+            amiri_TextWidget_1,
+            amiri_TextWidget_2,
+            baloo_Thambi_2_TextWidget,
+            liu_Jian_Mao_Cao_TextWidget,
+            open_Sans_TextWidget,
+            dan_Zhai_Hang_Shu_Cai_TextWidget,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[github_IconWidget, newYork_IconWidget, fish_IconWidget],
             ),
           ],
         ),
@@ -130,4 +202,19 @@ class _MyHomePageState extends State<MyHomePage> {
       // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
+}
+
+class _MyIconData {
+  static String fontFamily = R.fontFamily.iconFont;
+
+  // the unicode of icon see: lib/assets/fonts/IconFont/iconfont.json
+
+  // github
+  static IconData github = IconData(0xe628, fontFamily: fontFamily, matchTextDirection: true);
+
+  // new york
+  static IconData newYork = IconData(0xe648, fontFamily: fontFamily, matchTextDirection: true);
+
+  // fish
+  static IconData fish = IconData(0xefd7, fontFamily: fontFamily, matchTextDirection: true);
 }

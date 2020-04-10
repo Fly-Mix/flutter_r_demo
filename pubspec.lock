@@ -120,11 +120,11 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: "0.1.0"
-      resolved-ref: "0582b4fa70e3350f51d79e64cc096e4396d1a6c5"
+      ref: "0.1.1"
+      resolved-ref: "93cf7b43c8e2f7e2f6ddc91fc874b6f08f686912"
       url: "https://github.com/YK-Unit/r_dart_library.git"
     source: git
-    version: "0.1.0"
+    version: "0.1.1"
   sky_engine:
     dependency: transitive
     description: flutter

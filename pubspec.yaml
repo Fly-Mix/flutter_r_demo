@@ -6,37 +6,107 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^0.1.2
+  cupertino_icons: "^0.1.2"
   r_dart_library:
     git:
-      url: "https://github.com/YK-Unit/r_dart_library.git"
-      ref: 0.1.0
+      url: https://github.com/YK-Unit/r_dart_library.git
+      ref: 0.1.1
 dev_dependencies:
   flutter_test:
     sdk: flutter
 flutter:
   uses-material-design: true
   assets:
-    - packages/flutter_r_demo/assets/images/$_test_begin_with_character$.png
-    - packages/flutter_r_demo/assets/images/1.5x.png
-    - packages/flutter_r_demo/assets/images/test_image_asset_variant_1.png
-    - packages/flutter_r_demo/assets/images/test_image_asset_variant_2.png
-    - packages/flutter_r_demo/assets/images/only_3x.png
-    - packages/flutter_r_demo/assets/images/5_test_begin_with_number.png
-    - packages/flutter_r_demo/assets/images/C_test_begin_with_capitalize.png
-    - packages/flutter_r_demo/assets/images/_test_begin_with_character_.png
-    - packages/flutter_r_demo/assets/images/test.png
-    - packages/flutter_r_demo/assets/images/test.svg
-    - packages/flutter_r_demo/assets/images/test_+-.·!@&$￥.png
-    - packages/flutter_r_demo/assets/images/test_+-.·!@&$￥.svg
-    - packages/flutter_r_demo/assets/images/test_sameName.gif
-    - packages/flutter_r_demo/assets/images/test_sameName.jpg
-    - packages/flutter_r_demo/assets/images/test_sameName.png
-    - packages/flutter_r_demo/assets/jsons/test.json
-    - packages/flutter_r_demo/assets/yamls/test.yaml
+  - packages/flutter_r_demo/assets/images/test_asset_variants/3x/variant-subdir/test_variant-subdir.png
+  - packages/flutter_r_demo/assets/images/test_asset_variants/test_jpg_variant.jpg
+  - packages/flutter_r_demo/assets/images/test_asset_variants/test_only_1.5x_variant.png
+  - packages/flutter_r_demo/assets/images/test_asset_variants/test_only_3x_variant.png
+  - packages/flutter_r_demo/assets/images/test_asset_variants/test_only_main_asset.png
+  - packages/flutter_r_demo/assets/images/test_asset_variants/test_png_variant_1.png
+  - packages/flutter_r_demo/assets/images/test_asset_variants/test_png_variant_2.png
+  - packages/flutter_r_demo/assets/images/test_bad_images/$_test_begin_with_character$.png
+  - packages/flutter_r_demo/assets/images/test_bad_images/5_test_begin_with_number.png
+  - packages/flutter_r_demo/assets/images/test_bad_images/C_test_begin_with_capitalize.png
+  - packages/flutter_r_demo/assets/images/test_bad_images/_test_begin_with_character_.png
+  - packages/flutter_r_demo/assets/images/test_bad_images/test_+-.·!@&$￥.png
+  - packages/flutter_r_demo/assets/images/test_bad_images/test_UPPER_CASE.png
+  - packages/flutter_r_demo/assets/images/test_bad_images/test_good_character.png
+  - packages/flutter_r_demo/assets/images/test_same_asset_id/test_same_asset_id!.png
+  - packages/flutter_r_demo/assets/images/test_same_asset_id/test_same_asset_id+.png
+  - packages/flutter_r_demo/assets/images/test_same_asset_id/test_same_asset_id-.png
+  - packages/flutter_r_demo/assets/images/test_same_asset_id/test_same_asset_id￥.png
+  - packages/flutter_r_demo/assets/images/test_same_name/test_sameName.gif
+  - packages/flutter_r_demo/assets/images/test_same_name/test_sameName.jpg
+  - packages/flutter_r_demo/assets/images/test_same_name/test_sameName.png
+  - packages/flutter_r_demo/assets/images/test_svg/3.0x/test_3.0x_svg.svg
+  - packages/flutter_r_demo/assets/images/test_svg/test_svg.svg
+  - packages/flutter_r_demo/assets/jsons/subdir/subsubdir/test_subsubdir.json
+  - packages/flutter_r_demo/assets/jsons/subdir/test_subdir.json
+  - packages/flutter_r_demo/assets/jsons/test.json
+  - packages/flutter_r_demo/assets/yamls/test.yaml
+  - packages/flutter_r_demo/assets/yamls/test_same_asset_id/test+.yaml
+  - packages/flutter_r_demo/assets/yamls/test_same_asset_id/test-.yaml
+  - packages/flutter_r_demo/assets/yamls/test_same_asset_id/test@.yaml
+  fonts:
+  - family: Amiri
+    fonts:
+    - asset: packages/flutter_r_demo/assets/fonts/Amiri/Amiri-Bold.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Amiri/Amiri-BoldItalic.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Amiri/Amiri-Italic.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Amiri/Amiri-Regular.ttf
+  - family: Baloo_Thambi_2
+    fonts:
+    - asset: packages/flutter_r_demo/assets/fonts/Baloo_Thambi_2/BalooThambi2-Bold.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Baloo_Thambi_2/BalooThambi2-ExtraBold.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Baloo_Thambi_2/BalooThambi2-Medium.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Baloo_Thambi_2/BalooThambi2-Regular.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Baloo_Thambi_2/BalooThambi2-SemiBold.ttf
+  - family: Dan_Zhai_Hang_Shu_Cai
+    fonts:
+    - asset: packages/flutter_r_demo/assets/fonts/Dan_Zhai_Hang_Shu_Cai/Dan_Zhai_Hang_Shu_Cai.ttc
+  - family: IconFont
+    fonts:
+    - asset: packages/flutter_r_demo/assets/fonts/IconFont/iconfont.ttf
+  - family: Liu_Jian_Mao_Cao
+    fonts:
+    - asset: packages/flutter_r_demo/assets/fonts/Liu_Jian_Mao_Cao/LiuJianMaoCao-Regular.ttf
+  - family: Open_Sans
+    fonts:
+    - asset: packages/flutter_r_demo/assets/fonts/Open_Sans/OpenSans-Bold.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Open_Sans/OpenSans-BoldItalic.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Open_Sans/OpenSans-ExtraBold.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Open_Sans/OpenSans-ExtraBoldItalic.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Open_Sans/OpenSans-Italic.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Open_Sans/OpenSans-Light.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Open_Sans/OpenSans-LightItalic.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Open_Sans/OpenSans-Regular.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Open_Sans/OpenSans-SemiBold.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Open_Sans/OpenSans-SemiBoldItalic.ttf
+  - family: Roboto
+    fonts:
+    - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-Black.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-BlackItalic.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-Bold.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-BoldItalic.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-Italic.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-Light.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-LightItalic.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-Medium.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-MediumItalic.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-Regular.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-Thin.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/Roboto/Roboto-ThinItalic.ttf
+  - family: test_level_font
+    fonts:
+    - asset: packages/flutter_r_demo/assets/fonts/test_level_font/level1/level2/test_L2_font.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/test_level_font/level1/test_L1_font.ttf
+    - asset: packages/flutter_r_demo/assets/fonts/test_level_font/test_level_font.ttf
 flr:
-  version: 0.2.0
+  core_version: 2.0.0
+  dartfmt_line_length: 100
   assets:
-    - lib/assets/images
-    - lib/assets/jsons
-    - lib/assets/yamls
+  - lib/assets/images
+  - lib/assets/jsons
+  - lib/assets/yamls
+  fonts:
+  - lib/assets/fonts

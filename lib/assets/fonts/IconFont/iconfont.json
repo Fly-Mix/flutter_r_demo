@@ -1,0 +1,30 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1381385",
+      "name": "github",
+      "font_class": "github",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "5634067",
+      "name": "fish",
+      "font_class": "fish",
+      "unicode": "efd7",
+      "unicode_decimal": 61399
+    },
+    {
+      "icon_id": "13581257",
+      "name": "New York",
+      "font_class": "NewYork",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    }
+  ]
+}
