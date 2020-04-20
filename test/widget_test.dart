@@ -14,13 +14,16 @@ void main() {
   testWidgets('Test Generated Resources', (WidgetTester tester) async {
     List<RExpectation.AssetResource> allExpectationImage = [
       RExpectation.R.image.asset.test_only_1_5x_variant,
+      RExpectation.R.image.asset.test_png_variant_0,
       RExpectation.R.image.asset.test_png_variant_1,
       RExpectation.R.image.asset.test_png_variant_2,
       RExpectation.R.image.asset.test_jpg_variant_jpg,
       RExpectation.R.image.asset.test_only_3x_variant,
       RExpectation.R.image.asset.test_variant_subdir,
       RExpectation.R.image.asset.test_jpg_variant_jpg,
-      RExpectation.R.image.asset.test_only_main_asset,
+      RExpectation.R.image.asset.test_only_main_asset_0,
+      RExpectation.R.image.asset.test_only_main_asset_1,
+      RExpectation.R.image.asset.test_only_main_asset_2,
       RExpectation.R.image.asset.test_good_character,
       RExpectation.R.image.asset.a$_test_begin_with_character$,
       RExpectation.R.image.asset.a5_test_begin_with_number,
@@ -43,6 +46,7 @@ void main() {
     ];
 
     List<RExpectation.AssetResource> allExpectationText = [
+      RExpectation.R.text.asset.test_txt,
       RExpectation.R.text.asset.test_json,
       RExpectation.R.text.asset.test_subdir_json,
       RExpectation.R.text.asset.test_subsubdir_json,
@@ -57,21 +61,25 @@ void main() {
       RExpectation.R.fontFamily.baloo_Thambi_2,
       RExpectation.R.fontFamily.dan_Zhai_Hang_Shu_Cai,
       RExpectation.R.fontFamily.liu_Jian_Mao_Cao,
-      RExpectation.R.fontFamily.open_Sans,
-      RExpectation.R.fontFamily.roboto,
-      RExpectation.R.fontFamily.iconFont,
+      RExpectation.R.fontFamily.lobster,
+      RExpectation.R.fontFamily.pacifico,
+      RExpectation.R.fontFamily.yorkFish_IconFont,
+      RExpectation.R.fontFamily.sky_IconFont,
       RExpectation.R.fontFamily.test_level_font
     ];
 
     List<RGenerated.AssetResource> allGeneratedImage = [
       RGenerated.R.image.asset.test_only_1_5x_variant,
+      RGenerated.R.image.asset.test_png_variant_0,
       RGenerated.R.image.asset.test_png_variant_1,
       RGenerated.R.image.asset.test_png_variant_2,
       RGenerated.R.image.asset.test_jpg_variant_jpg,
       RGenerated.R.image.asset.test_only_3x_variant,
       RGenerated.R.image.asset.test_variant_subdir,
       RGenerated.R.image.asset.test_jpg_variant_jpg,
-      RGenerated.R.image.asset.test_only_main_asset,
+      RGenerated.R.image.asset.test_only_main_asset_0,
+      RGenerated.R.image.asset.test_only_main_asset_1,
+      RGenerated.R.image.asset.test_only_main_asset_2,
       RGenerated.R.image.asset.test_good_character,
       RGenerated.R.image.asset.a$_test_begin_with_character$,
       RGenerated.R.image.asset.a5_test_begin_with_number,
@@ -94,6 +102,7 @@ void main() {
     ];
 
     List<RGenerated.AssetResource> allGeneratedText = [
+      RGenerated.R.text.asset.test_txt,
       RGenerated.R.text.asset.test_json,
       RGenerated.R.text.asset.test_subdir_json,
       RGenerated.R.text.asset.test_subsubdir_json,
@@ -108,9 +117,10 @@ void main() {
       RGenerated.R.fontFamily.baloo_Thambi_2,
       RGenerated.R.fontFamily.dan_Zhai_Hang_Shu_Cai,
       RGenerated.R.fontFamily.liu_Jian_Mao_Cao,
-      RGenerated.R.fontFamily.open_Sans,
-      RGenerated.R.fontFamily.roboto,
-      RGenerated.R.fontFamily.iconFont,
+      RGenerated.R.fontFamily.lobster,
+      RGenerated.R.fontFamily.pacifico,
+      RGenerated.R.fontFamily.yorkFish_IconFont,
+      RGenerated.R.fontFamily.sky_IconFont,
       RGenerated.R.fontFamily.test_level_font
     ];
 
