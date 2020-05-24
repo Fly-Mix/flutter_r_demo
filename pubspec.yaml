@@ -53,7 +53,11 @@ flutter:
   - packages/flutter_r_demo/assets/texts/yamls/test_same_asset_id/test-.yaml
   - packages/flutter_r_demo/assets/texts/yamls/test_same_asset_id/test@.yaml
   - assets/htmls/test.html
+  - assets/htmls/test_html_asset_variant.png
+  - assets/htmls/test_html_main_asset.png
   - packages/flutter_r_demo/assets/htmls/test.html
+  - packages/flutter_r_demo/assets/htmls/test_html_asset_variant.png
+  - packages/flutter_r_demo/assets/htmls/test_html_main_asset.png
   fonts:
   - family: Amiri
     fonts:
