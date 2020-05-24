@@ -52,6 +52,8 @@ flutter:
   - packages/flutter_r_demo/assets/texts/yamls/test_same_asset_id/test+.yaml
   - packages/flutter_r_demo/assets/texts/yamls/test_same_asset_id/test-.yaml
   - packages/flutter_r_demo/assets/texts/yamls/test_same_asset_id/test@.yaml
+  - assets/htmls/test.html
+  - packages/flutter_r_demo/assets/htmls/test.html
   fonts:
   - family: Amiri
     fonts:
@@ -90,7 +92,7 @@ flutter:
     - asset: packages/flutter_r_demo/assets/fonts/test_level_font/level1/test_L1_font.ttf
     - asset: packages/flutter_r_demo/assets/fonts/test_level_font/test_level_font.ttf
 flr:
-  core_version: 3.0.0
+  core_version: 3.1.0
   dartfmt_line_length: 100
   assets:
   - lib/assets/images
