@@ -44,13 +44,13 @@ class R {
 /// - fileExtname：.png
 class AssetResource {
   /// Creates an object to hold the asset resource’s metadata.
-  const AssetResource(this.assetName, {this.packageName}) : assert(assetName != null);
+  const AssetResource(this.assetName, {this.packageName});
 
   /// The name of the main asset from the set of asset resources to choose from.
   final String assetName;
 
   /// The name of the package from which the asset resource is included.
-  final String packageName;
+  final String? packageName;
 
   /// The name used to generate the key to obtain the asset resource. For local assets
   /// this is [assetName], and for assets from packages the [assetName] is
@@ -101,7 +101,7 @@ class _R_Image_AssetResource {
   /// asset: assets/images/test_only_main_asset_1.png
   // ignore: non_constant_identifier_names
   final test_only_main_asset_1 =
-      const AssetResource("assets/images/test_only_main_asset_1.png", packageName: null);
+  const AssetResource("assets/images/test_only_main_asset_1.png", packageName: null);
 
   /// asset: lib/assets/images/test_asset_variants/3x/variant-subdir/test_variant-subdir.png
   // ignore: non_constant_identifier_names
@@ -224,17 +224,17 @@ class _R_Image_AssetResource {
   /// asset: lib/assets/images/test_same_name/test_sameName.gif
   // ignore: non_constant_identifier_names
   final test_sameName_gif =
-      const AssetResource("assets/images/test_same_name/test_sameName.gif", packageName: R.package);
+  const AssetResource("assets/images/test_same_name/test_sameName.gif", packageName: R.package);
 
   /// asset: lib/assets/images/test_same_name/test_sameName.jpg
   // ignore: non_constant_identifier_names
   final test_sameName_jpg =
-      const AssetResource("assets/images/test_same_name/test_sameName.jpg", packageName: R.package);
+  const AssetResource("assets/images/test_same_name/test_sameName.jpg", packageName: R.package);
 
   /// asset: lib/assets/images/test_same_name/test_sameName.png
   // ignore: non_constant_identifier_names
   final test_sameName =
-      const AssetResource("assets/images/test_same_name/test_sameName.png", packageName: R.package);
+  const AssetResource("assets/images/test_same_name/test_sameName.png", packageName: R.package);
 }
 
 // ignore: camel_case_types
@@ -244,12 +244,12 @@ class _R_Svg_AssetResource {
   /// asset: lib/assets/images/test_svg/3.0x/test_3.0x_svg.svg
   // ignore: non_constant_identifier_names
   final test_3_0x_svg =
-      const AssetResource("assets/images/test_svg/3.0x/test_3.0x_svg.svg", packageName: R.package);
+  const AssetResource("assets/images/test_svg/3.0x/test_3.0x_svg.svg", packageName: R.package);
 
   /// asset: lib/assets/images/test_svg/test_svg.svg
   // ignore: non_constant_identifier_names
   final test_svg =
-      const AssetResource("assets/images/test_svg/test_svg.svg", packageName: R.package);
+  const AssetResource("assets/images/test_svg/test_svg.svg", packageName: R.package);
 }
 
 // ignore: camel_case_types
@@ -269,7 +269,7 @@ class _R_Text_AssetResource {
   /// asset: lib/assets/texts/jsons/subdir/test_subdir.json
   // ignore: non_constant_identifier_names
   final test_subdir_json =
-      const AssetResource("assets/texts/jsons/subdir/test_subdir.json", packageName: R.package);
+  const AssetResource("assets/texts/jsons/subdir/test_subdir.json", packageName: R.package);
 
   /// asset: lib/assets/texts/jsons/test.json
   // ignore: non_constant_identifier_names
@@ -462,14 +462,14 @@ class _R_Svg {
 
   /// asset: lib/assets/images/test_svg/3.0x/test_3.0x_svg.svg
   // ignore: non_constant_identifier_names
-  AssetSvg test_3_0x_svg({@required double width, @required double height}) {
+  AssetSvg test_3_0x_svg({required double width, required double height}) {
     final imageProvider = AssetSvg(asset.test_3_0x_svg.keyName, width: width, height: height);
     return imageProvider;
   }
 
   /// asset: lib/assets/images/test_svg/test_svg.svg
   // ignore: non_constant_identifier_names
-  AssetSvg test_svg({@required double width, @required double height}) {
+  AssetSvg test_svg({required double width, required double height}) {
     final imageProvider = AssetSvg(asset.test_svg.keyName, width: width, height: height);
     return imageProvider;
   }
