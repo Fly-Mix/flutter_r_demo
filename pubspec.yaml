@@ -7,10 +7,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: "^1.0.0"
-  r_dart_library:
-    git:
-      url: https://github.com/YK-Unit/r_dart_library.git
-      ref: pre-release/0.4.0-nullsafety.0
+  r_dart_library: 0.4.0-nullsafety.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -52,12 +49,6 @@ flutter:
   - packages/flutter_r_demo/assets/texts/yamls/test_same_asset_id/test+.yaml
   - packages/flutter_r_demo/assets/texts/yamls/test_same_asset_id/test-.yaml
   - packages/flutter_r_demo/assets/texts/yamls/test_same_asset_id/test@.yaml
-  - assets/htmls/test.html
-  - assets/htmls/test_html_asset_variant.png
-  - assets/htmls/test_html_main_asset.png
-  - packages/flutter_r_demo/assets/htmls/test.html
-  - packages/flutter_r_demo/assets/htmls/test_html_asset_variant.png
-  - packages/flutter_r_demo/assets/htmls/test_html_main_asset.png
   fonts:
   - family: Amiri
     fonts:
@@ -96,7 +87,7 @@ flutter:
     - asset: packages/flutter_r_demo/assets/fonts/test_level_font/level1/test_L1_font.ttf
     - asset: packages/flutter_r_demo/assets/fonts/test_level_font/test_level_font.ttf
 flr:
-  core_version: 3.1.0
+  core_version: 3.2.0
   dartfmt_line_length: 100
   assets:
   - lib/assets/images

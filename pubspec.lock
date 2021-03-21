@@ -119,11 +119,9 @@ packages:
   r_dart_library:
     dependency: "direct main"
     description:
-      path: "."
-      ref: "pre-release/0.4.0-nullsafety.0"
-      resolved-ref: "060bec8f49b5064ddb73e09f9aa583c5e30e4134"
-      url: "https://github.com/YK-Unit/r_dart_library.git"
-    source: git
+      name: r_dart_library
+      url: "https://pub.flutter-io.cn"
+    source: hosted
     version: "0.4.0-nullsafety.0"
   sky_engine:
     dependency: transitive
