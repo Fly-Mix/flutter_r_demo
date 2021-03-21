@@ -44,13 +44,13 @@ class R {
 /// - fileExtname：.png
 class AssetResource {
   /// Creates an object to hold the asset resource’s metadata.
-  const AssetResource(this.assetName, {this.packageName}) : assert(assetName != null);
+  const AssetResource(this.assetName, {this.packageName});
 
   /// The name of the main asset from the set of asset resources to choose from.
   final String assetName;
 
   /// The name of the package from which the asset resource is included.
-  final String packageName;
+  final String? packageName;
 
   /// The name used to generate the key to obtain the asset resource. For local assets
   /// this is [assetName], and for assets from packages the [assetName] is
@@ -92,123 +92,146 @@ class AssetResource {
 class _R_Image_AssetResource {
   const _R_Image_AssetResource();
 
-  /// asset: assets/images/test_asset_variants/3x/variant-subdir/test_variant-subdir.png
+  /// asset: assets/images/test_asset_variants/test_png_variant_1.png
+  // ignore: non_constant_identifier_names
+  final test_png_variant_1 = const AssetResource(
+      "assets/images/test_asset_variants/test_png_variant_1.png",
+      packageName: null);
+
+  /// asset: assets/images/test_only_main_asset_1.png
+  // ignore: non_constant_identifier_names
+  final test_only_main_asset_1 =
+      const AssetResource("assets/images/test_only_main_asset_1.png", packageName: null);
+
+  /// asset: lib/assets/images/test_asset_variants/3x/variant-subdir/test_variant-subdir.png
   // ignore: non_constant_identifier_names
   final test_variant_subdir = const AssetResource(
       "assets/images/test_asset_variants/3x/variant-subdir/test_variant-subdir.png",
       packageName: R.package);
 
-  /// asset: assets/images/test_asset_variants/test_jpg_variant.jpg
+  /// asset: lib/assets/images/test_asset_variants/test_jpg_variant.jpg
   // ignore: non_constant_identifier_names
   final test_jpg_variant_jpg = const AssetResource(
       "assets/images/test_asset_variants/test_jpg_variant.jpg",
       packageName: R.package);
 
-  /// asset: assets/images/test_asset_variants/test_only_1.5x_variant.png
+  /// asset: lib/assets/images/test_asset_variants/test_no_main_asset.png
+  // ignore: non_constant_identifier_names
+  final test_no_main_asset = const AssetResource(
+      "assets/images/test_asset_variants/test_no_main_asset.png",
+      packageName: R.package);
+
+  /// asset: lib/assets/images/test_asset_variants/test_only_1.5x_variant.png
   // ignore: non_constant_identifier_names
   final test_only_1_5x_variant = const AssetResource(
       "assets/images/test_asset_variants/test_only_1.5x_variant.png",
       packageName: R.package);
 
-  /// asset: assets/images/test_asset_variants/test_only_3x_variant.png
+  /// asset: lib/assets/images/test_asset_variants/test_only_3x_variant.png
   // ignore: non_constant_identifier_names
   final test_only_3x_variant = const AssetResource(
       "assets/images/test_asset_variants/test_only_3x_variant.png",
       packageName: R.package);
 
-  /// asset: assets/images/test_asset_variants/test_only_main_asset.png
+  /// asset: lib/assets/images/test_asset_variants/test_only_main_asset_0.png
   // ignore: non_constant_identifier_names
-  final test_only_main_asset = const AssetResource(
-      "assets/images/test_asset_variants/test_only_main_asset.png",
+  final test_only_main_asset_0 = const AssetResource(
+      "assets/images/test_asset_variants/test_only_main_asset_0.png",
       packageName: R.package);
 
-  /// asset: assets/images/test_asset_variants/test_png_variant_1.png
+  /// asset: lib/assets/images/test_asset_variants/test_only_main_asset_2.png
   // ignore: non_constant_identifier_names
-  final test_png_variant_1 = const AssetResource(
-      "assets/images/test_asset_variants/test_png_variant_1.png",
+  final test_only_main_asset_2 = const AssetResource(
+      "assets/images/test_asset_variants/test_only_main_asset_2.png",
       packageName: R.package);
 
-  /// asset: assets/images/test_asset_variants/test_png_variant_2.png
+  /// asset: lib/assets/images/test_asset_variants/test_png_variant_0.png
+  // ignore: non_constant_identifier_names
+  final test_png_variant_0 = const AssetResource(
+      "assets/images/test_asset_variants/test_png_variant_0.png",
+      packageName: R.package);
+
+  /// asset: lib/assets/images/test_asset_variants/test_png_variant_2.png
   // ignore: non_constant_identifier_names
   final test_png_variant_2 = const AssetResource(
       "assets/images/test_asset_variants/test_png_variant_2.png",
       packageName: R.package);
 
-  /// asset: assets/images/test_bad_images/$_test_begin_with_character$.png
+  /// asset: lib/assets/images/test_bad_images/$_test_begin_with_character$.png
   // ignore: non_constant_identifier_names
   final a$_test_begin_with_character$ = const AssetResource(
       "assets/images/test_bad_images/\$_test_begin_with_character\$.png",
       packageName: R.package);
 
-  /// asset: assets/images/test_bad_images/5_test_begin_with_number.png
+  /// asset: lib/assets/images/test_bad_images/5_test_begin_with_number.png
   // ignore: non_constant_identifier_names
   final a5_test_begin_with_number = const AssetResource(
       "assets/images/test_bad_images/5_test_begin_with_number.png",
       packageName: R.package);
 
-  /// asset: assets/images/test_bad_images/C_test_begin_with_capitalize.png
+  /// asset: lib/assets/images/test_bad_images/C_test_begin_with_capitalize.png
   // ignore: non_constant_identifier_names
   final c_test_begin_with_capitalize = const AssetResource(
       "assets/images/test_bad_images/C_test_begin_with_capitalize.png",
       packageName: R.package);
 
-  /// asset: assets/images/test_bad_images/_test_begin_with_character_.png
+  /// asset: lib/assets/images/test_bad_images/_test_begin_with_character_.png
   // ignore: non_constant_identifier_names
   final a_test_begin_with_character_ = const AssetResource(
       "assets/images/test_bad_images/_test_begin_with_character_.png",
       packageName: R.package);
 
-  /// asset: assets/images/test_bad_images/test_+-.·!@&$￥.png
+  /// asset: lib/assets/images/test_bad_images/test_+-.·!@&$￥.png
   // ignore: non_constant_identifier_names
   final test________$_ = const AssetResource("assets/images/test_bad_images/test_+-.·!@&\$￥.png",
       packageName: R.package);
 
-  /// asset: assets/images/test_bad_images/test_UPPER_CASE.png
+  /// asset: lib/assets/images/test_bad_images/test_UPPER_CASE.png
   // ignore: non_constant_identifier_names
   final test_UPPER_CASE = const AssetResource("assets/images/test_bad_images/test_UPPER_CASE.png",
       packageName: R.package);
 
-  /// asset: assets/images/test_bad_images/test_good_character.png
+  /// asset: lib/assets/images/test_bad_images/test_good_character.png
   // ignore: non_constant_identifier_names
   final test_good_character = const AssetResource(
       "assets/images/test_bad_images/test_good_character.png",
       packageName: R.package);
 
-  /// asset: assets/images/test_same_asset_id/test_same_asset_id!.png
+  /// asset: lib/assets/images/test_same_asset_id/test_same_asset_id!.png
   // ignore: non_constant_identifier_names
   final test_same_asset_id_ = const AssetResource(
       "assets/images/test_same_asset_id/test_same_asset_id!.png",
       packageName: R.package);
 
-  /// asset: assets/images/test_same_asset_id/test_same_asset_id+.png
+  /// asset: lib/assets/images/test_same_asset_id/test_same_asset_id+.png
   // ignore: non_constant_identifier_names
   final test_same_asset_id_$1 = const AssetResource(
       "assets/images/test_same_asset_id/test_same_asset_id+.png",
       packageName: R.package);
 
-  /// asset: assets/images/test_same_asset_id/test_same_asset_id-.png
+  /// asset: lib/assets/images/test_same_asset_id/test_same_asset_id-.png
   // ignore: non_constant_identifier_names
   final test_same_asset_id_$2 = const AssetResource(
       "assets/images/test_same_asset_id/test_same_asset_id-.png",
       packageName: R.package);
 
-  /// asset: assets/images/test_same_asset_id/test_same_asset_id￥.png
+  /// asset: lib/assets/images/test_same_asset_id/test_same_asset_id￥.png
   // ignore: non_constant_identifier_names
   final test_same_asset_id_$3 = const AssetResource(
       "assets/images/test_same_asset_id/test_same_asset_id￥.png",
       packageName: R.package);
 
-  /// asset: assets/images/test_same_name/test_sameName.gif
+  /// asset: lib/assets/images/test_same_name/test_sameName.gif
   // ignore: non_constant_identifier_names
   final test_sameName_gif =
       const AssetResource("assets/images/test_same_name/test_sameName.gif", packageName: R.package);
 
-  /// asset: assets/images/test_same_name/test_sameName.jpg
+  /// asset: lib/assets/images/test_same_name/test_sameName.jpg
   // ignore: non_constant_identifier_names
   final test_sameName_jpg =
       const AssetResource("assets/images/test_same_name/test_sameName.jpg", packageName: R.package);
 
-  /// asset: assets/images/test_same_name/test_sameName.png
+  /// asset: lib/assets/images/test_same_name/test_sameName.png
   // ignore: non_constant_identifier_names
   final test_sameName =
       const AssetResource("assets/images/test_same_name/test_sameName.png", packageName: R.package);
@@ -218,12 +241,12 @@ class _R_Image_AssetResource {
 class _R_Svg_AssetResource {
   const _R_Svg_AssetResource();
 
-  /// asset: assets/images/test_svg/3.0x/test_3.0x_svg.svg
+  /// asset: lib/assets/images/test_svg/3.0x/test_3.0x_svg.svg
   // ignore: non_constant_identifier_names
   final test_3_0x_svg =
       const AssetResource("assets/images/test_svg/3.0x/test_3.0x_svg.svg", packageName: R.package);
 
-  /// asset: assets/images/test_svg/test_svg.svg
+  /// asset: lib/assets/images/test_svg/test_svg.svg
   // ignore: non_constant_identifier_names
   final test_svg =
       const AssetResource("assets/images/test_svg/test_svg.svg", packageName: R.package);
@@ -233,39 +256,43 @@ class _R_Svg_AssetResource {
 class _R_Text_AssetResource {
   const _R_Text_AssetResource();
 
-  /// asset: assets/jsons/subdir/subsubdir/test_subsubdir.json
+  /// asset: assets/texts/test.txt
+  // ignore: non_constant_identifier_names
+  final test_txt = const AssetResource("assets/texts/test.txt", packageName: null);
+
+  /// asset: lib/assets/texts/jsons/subdir/subsubdir/test_subsubdir.json
   // ignore: non_constant_identifier_names
   final test_subsubdir_json = const AssetResource(
-      "assets/jsons/subdir/subsubdir/test_subsubdir.json",
+      "assets/texts/jsons/subdir/subsubdir/test_subsubdir.json",
       packageName: R.package);
 
-  /// asset: assets/jsons/subdir/test_subdir.json
+  /// asset: lib/assets/texts/jsons/subdir/test_subdir.json
   // ignore: non_constant_identifier_names
   final test_subdir_json =
-      const AssetResource("assets/jsons/subdir/test_subdir.json", packageName: R.package);
+      const AssetResource("assets/texts/jsons/subdir/test_subdir.json", packageName: R.package);
 
-  /// asset: assets/jsons/test.json
+  /// asset: lib/assets/texts/jsons/test.json
   // ignore: non_constant_identifier_names
-  final test_json = const AssetResource("assets/jsons/test.json", packageName: R.package);
+  final test_json = const AssetResource("assets/texts/jsons/test.json", packageName: R.package);
 
-  /// asset: assets/yamls/test.yaml
+  /// asset: lib/assets/texts/yamls/test.yaml
   // ignore: non_constant_identifier_names
-  final test_yaml = const AssetResource("assets/yamls/test.yaml", packageName: R.package);
+  final test_yaml = const AssetResource("assets/texts/yamls/test.yaml", packageName: R.package);
 
-  /// asset: assets/yamls/test_same_asset_id/test+.yaml
+  /// asset: lib/assets/texts/yamls/test_same_asset_id/test+.yaml
   // ignore: non_constant_identifier_names
-  final test__yaml =
-      const AssetResource("assets/yamls/test_same_asset_id/test+.yaml", packageName: R.package);
+  final test__yaml = const AssetResource("assets/texts/yamls/test_same_asset_id/test+.yaml",
+      packageName: R.package);
 
-  /// asset: assets/yamls/test_same_asset_id/test-.yaml
+  /// asset: lib/assets/texts/yamls/test_same_asset_id/test-.yaml
   // ignore: non_constant_identifier_names
-  final test__yaml$1 =
-      const AssetResource("assets/yamls/test_same_asset_id/test-.yaml", packageName: R.package);
+  final test__yaml$1 = const AssetResource("assets/texts/yamls/test_same_asset_id/test-.yaml",
+      packageName: R.package);
 
-  /// asset: assets/yamls/test_same_asset_id/test@.yaml
+  /// asset: lib/assets/texts/yamls/test_same_asset_id/test@.yaml
   // ignore: non_constant_identifier_names
-  final test__yaml$2 =
-      const AssetResource("assets/yamls/test_same_asset_id/test@.yaml", packageName: R.package);
+  final test__yaml$2 = const AssetResource("assets/texts/yamls/test_same_asset_id/test@.yaml",
+      packageName: R.package);
 }
 
 /// This `_R_Image` class is generated and contains references to static non-svg type image asset resources.
@@ -275,127 +302,151 @@ class _R_Image {
 
   final asset = const _R_Image_AssetResource();
 
-  /// asset: assets/images/test_asset_variants/3x/variant-subdir/test_variant-subdir.png
-  // ignore: non_constant_identifier_names
-  AssetImage test_variant_subdir() {
-    return AssetImage(asset.test_variant_subdir.keyName);
-  }
-
-  /// asset: assets/images/test_asset_variants/test_jpg_variant.jpg
-  // ignore: non_constant_identifier_names
-  AssetImage test_jpg_variant_jpg() {
-    return AssetImage(asset.test_jpg_variant_jpg.keyName);
-  }
-
-  /// asset: assets/images/test_asset_variants/test_only_1.5x_variant.png
-  // ignore: non_constant_identifier_names
-  AssetImage test_only_1_5x_variant() {
-    return AssetImage(asset.test_only_1_5x_variant.keyName);
-  }
-
-  /// asset: assets/images/test_asset_variants/test_only_3x_variant.png
-  // ignore: non_constant_identifier_names
-  AssetImage test_only_3x_variant() {
-    return AssetImage(asset.test_only_3x_variant.keyName);
-  }
-
-  /// asset: assets/images/test_asset_variants/test_only_main_asset.png
-  // ignore: non_constant_identifier_names
-  AssetImage test_only_main_asset() {
-    return AssetImage(asset.test_only_main_asset.keyName);
-  }
-
   /// asset: assets/images/test_asset_variants/test_png_variant_1.png
   // ignore: non_constant_identifier_names
   AssetImage test_png_variant_1() {
     return AssetImage(asset.test_png_variant_1.keyName);
   }
 
-  /// asset: assets/images/test_asset_variants/test_png_variant_2.png
+  /// asset: assets/images/test_only_main_asset_1.png
+  // ignore: non_constant_identifier_names
+  AssetImage test_only_main_asset_1() {
+    return AssetImage(asset.test_only_main_asset_1.keyName);
+  }
+
+  /// asset: lib/assets/images/test_asset_variants/3x/variant-subdir/test_variant-subdir.png
+  // ignore: non_constant_identifier_names
+  AssetImage test_variant_subdir() {
+    return AssetImage(asset.test_variant_subdir.keyName);
+  }
+
+  /// asset: lib/assets/images/test_asset_variants/test_jpg_variant.jpg
+  // ignore: non_constant_identifier_names
+  AssetImage test_jpg_variant_jpg() {
+    return AssetImage(asset.test_jpg_variant_jpg.keyName);
+  }
+
+  /// asset: lib/assets/images/test_asset_variants/test_no_main_asset.png
+  // ignore: non_constant_identifier_names
+  AssetImage test_no_main_asset() {
+    return AssetImage(asset.test_no_main_asset.keyName);
+  }
+
+  /// asset: lib/assets/images/test_asset_variants/test_only_1.5x_variant.png
+  // ignore: non_constant_identifier_names
+  AssetImage test_only_1_5x_variant() {
+    return AssetImage(asset.test_only_1_5x_variant.keyName);
+  }
+
+  /// asset: lib/assets/images/test_asset_variants/test_only_3x_variant.png
+  // ignore: non_constant_identifier_names
+  AssetImage test_only_3x_variant() {
+    return AssetImage(asset.test_only_3x_variant.keyName);
+  }
+
+  /// asset: lib/assets/images/test_asset_variants/test_only_main_asset_0.png
+  // ignore: non_constant_identifier_names
+  AssetImage test_only_main_asset_0() {
+    return AssetImage(asset.test_only_main_asset_0.keyName);
+  }
+
+  /// asset: lib/assets/images/test_asset_variants/test_only_main_asset_2.png
+  // ignore: non_constant_identifier_names
+  AssetImage test_only_main_asset_2() {
+    return AssetImage(asset.test_only_main_asset_2.keyName);
+  }
+
+  /// asset: lib/assets/images/test_asset_variants/test_png_variant_0.png
+  // ignore: non_constant_identifier_names
+  AssetImage test_png_variant_0() {
+    return AssetImage(asset.test_png_variant_0.keyName);
+  }
+
+  /// asset: lib/assets/images/test_asset_variants/test_png_variant_2.png
   // ignore: non_constant_identifier_names
   AssetImage test_png_variant_2() {
     return AssetImage(asset.test_png_variant_2.keyName);
   }
 
-  /// asset: assets/images/test_bad_images/$_test_begin_with_character$.png
+  /// asset: lib/assets/images/test_bad_images/$_test_begin_with_character$.png
   // ignore: non_constant_identifier_names
   AssetImage a$_test_begin_with_character$() {
     return AssetImage(asset.a$_test_begin_with_character$.keyName);
   }
 
-  /// asset: assets/images/test_bad_images/5_test_begin_with_number.png
+  /// asset: lib/assets/images/test_bad_images/5_test_begin_with_number.png
   // ignore: non_constant_identifier_names
   AssetImage a5_test_begin_with_number() {
     return AssetImage(asset.a5_test_begin_with_number.keyName);
   }
 
-  /// asset: assets/images/test_bad_images/C_test_begin_with_capitalize.png
+  /// asset: lib/assets/images/test_bad_images/C_test_begin_with_capitalize.png
   // ignore: non_constant_identifier_names
   AssetImage c_test_begin_with_capitalize() {
     return AssetImage(asset.c_test_begin_with_capitalize.keyName);
   }
 
-  /// asset: assets/images/test_bad_images/_test_begin_with_character_.png
+  /// asset: lib/assets/images/test_bad_images/_test_begin_with_character_.png
   // ignore: non_constant_identifier_names
   AssetImage a_test_begin_with_character_() {
     return AssetImage(asset.a_test_begin_with_character_.keyName);
   }
 
-  /// asset: assets/images/test_bad_images/test_+-.·!@&$￥.png
+  /// asset: lib/assets/images/test_bad_images/test_+-.·!@&$￥.png
   // ignore: non_constant_identifier_names
   AssetImage test________$_() {
     return AssetImage(asset.test________$_.keyName);
   }
 
-  /// asset: assets/images/test_bad_images/test_UPPER_CASE.png
+  /// asset: lib/assets/images/test_bad_images/test_UPPER_CASE.png
   // ignore: non_constant_identifier_names
   AssetImage test_UPPER_CASE() {
     return AssetImage(asset.test_UPPER_CASE.keyName);
   }
 
-  /// asset: assets/images/test_bad_images/test_good_character.png
+  /// asset: lib/assets/images/test_bad_images/test_good_character.png
   // ignore: non_constant_identifier_names
   AssetImage test_good_character() {
     return AssetImage(asset.test_good_character.keyName);
   }
 
-  /// asset: assets/images/test_same_asset_id/test_same_asset_id!.png
+  /// asset: lib/assets/images/test_same_asset_id/test_same_asset_id!.png
   // ignore: non_constant_identifier_names
   AssetImage test_same_asset_id_() {
     return AssetImage(asset.test_same_asset_id_.keyName);
   }
 
-  /// asset: assets/images/test_same_asset_id/test_same_asset_id+.png
+  /// asset: lib/assets/images/test_same_asset_id/test_same_asset_id+.png
   // ignore: non_constant_identifier_names
   AssetImage test_same_asset_id_$1() {
     return AssetImage(asset.test_same_asset_id_$1.keyName);
   }
 
-  /// asset: assets/images/test_same_asset_id/test_same_asset_id-.png
+  /// asset: lib/assets/images/test_same_asset_id/test_same_asset_id-.png
   // ignore: non_constant_identifier_names
   AssetImage test_same_asset_id_$2() {
     return AssetImage(asset.test_same_asset_id_$2.keyName);
   }
 
-  /// asset: assets/images/test_same_asset_id/test_same_asset_id￥.png
+  /// asset: lib/assets/images/test_same_asset_id/test_same_asset_id￥.png
   // ignore: non_constant_identifier_names
   AssetImage test_same_asset_id_$3() {
     return AssetImage(asset.test_same_asset_id_$3.keyName);
   }
 
-  /// asset: assets/images/test_same_name/test_sameName.gif
+  /// asset: lib/assets/images/test_same_name/test_sameName.gif
   // ignore: non_constant_identifier_names
   AssetImage test_sameName_gif() {
     return AssetImage(asset.test_sameName_gif.keyName);
   }
 
-  /// asset: assets/images/test_same_name/test_sameName.jpg
+  /// asset: lib/assets/images/test_same_name/test_sameName.jpg
   // ignore: non_constant_identifier_names
   AssetImage test_sameName_jpg() {
     return AssetImage(asset.test_sameName_jpg.keyName);
   }
 
-  /// asset: assets/images/test_same_name/test_sameName.png
+  /// asset: lib/assets/images/test_same_name/test_sameName.png
   // ignore: non_constant_identifier_names
   AssetImage test_sameName() {
     return AssetImage(asset.test_sameName.keyName);
@@ -409,16 +460,16 @@ class _R_Svg {
 
   final asset = const _R_Svg_AssetResource();
 
-  /// asset: assets/images/test_svg/3.0x/test_3.0x_svg.svg
+  /// asset: lib/assets/images/test_svg/3.0x/test_3.0x_svg.svg
   // ignore: non_constant_identifier_names
-  AssetSvg test_3_0x_svg({@required double width, @required double height}) {
+  AssetSvg test_3_0x_svg({required double width, required double height}) {
     final imageProvider = AssetSvg(asset.test_3_0x_svg.keyName, width: width, height: height);
     return imageProvider;
   }
 
-  /// asset: assets/images/test_svg/test_svg.svg
+  /// asset: lib/assets/images/test_svg/test_svg.svg
   // ignore: non_constant_identifier_names
-  AssetSvg test_svg({@required double width, @required double height}) {
+  AssetSvg test_svg({required double width, required double height}) {
     final imageProvider = AssetSvg(asset.test_svg.keyName, width: width, height: height);
     return imageProvider;
   }
@@ -431,49 +482,56 @@ class _R_Text {
 
   final asset = const _R_Text_AssetResource();
 
-  /// asset: assets/jsons/subdir/subsubdir/test_subsubdir.json
+  /// asset: assets/texts/test.txt
+  // ignore: non_constant_identifier_names
+  Future<String> test_txt() {
+    final str = rootBundle.loadString(asset.test_txt.keyName);
+    return str;
+  }
+
+  /// asset: lib/assets/texts/jsons/subdir/subsubdir/test_subsubdir.json
   // ignore: non_constant_identifier_names
   Future<String> test_subsubdir_json() {
     final str = rootBundle.loadString(asset.test_subsubdir_json.keyName);
     return str;
   }
 
-  /// asset: assets/jsons/subdir/test_subdir.json
+  /// asset: lib/assets/texts/jsons/subdir/test_subdir.json
   // ignore: non_constant_identifier_names
   Future<String> test_subdir_json() {
     final str = rootBundle.loadString(asset.test_subdir_json.keyName);
     return str;
   }
 
-  /// asset: assets/jsons/test.json
+  /// asset: lib/assets/texts/jsons/test.json
   // ignore: non_constant_identifier_names
   Future<String> test_json() {
     final str = rootBundle.loadString(asset.test_json.keyName);
     return str;
   }
 
-  /// asset: assets/yamls/test.yaml
+  /// asset: lib/assets/texts/yamls/test.yaml
   // ignore: non_constant_identifier_names
   Future<String> test_yaml() {
     final str = rootBundle.loadString(asset.test_yaml.keyName);
     return str;
   }
 
-  /// asset: assets/yamls/test_same_asset_id/test+.yaml
+  /// asset: lib/assets/texts/yamls/test_same_asset_id/test+.yaml
   // ignore: non_constant_identifier_names
   Future<String> test__yaml() {
     final str = rootBundle.loadString(asset.test__yaml.keyName);
     return str;
   }
 
-  /// asset: assets/yamls/test_same_asset_id/test-.yaml
+  /// asset: lib/assets/texts/yamls/test_same_asset_id/test-.yaml
   // ignore: non_constant_identifier_names
   Future<String> test__yaml$1() {
     final str = rootBundle.loadString(asset.test__yaml$1.keyName);
     return str;
   }
 
-  /// asset: assets/yamls/test_same_asset_id/test@.yaml
+  /// asset: lib/assets/texts/yamls/test_same_asset_id/test@.yaml
   // ignore: non_constant_identifier_names
   Future<String> test__yaml$2() {
     final str = rootBundle.loadString(asset.test__yaml$2.keyName);
@@ -498,21 +556,25 @@ class _R_FontFamily {
   // ignore: non_constant_identifier_names
   final dan_Zhai_Hang_Shu_Cai = "Dan_Zhai_Hang_Shu_Cai";
 
-  /// font family: IconFont
-  // ignore: non_constant_identifier_names
-  final iconFont = "IconFont";
-
   /// font family: Liu_Jian_Mao_Cao
   // ignore: non_constant_identifier_names
   final liu_Jian_Mao_Cao = "Liu_Jian_Mao_Cao";
 
-  /// font family: Open_Sans
+  /// font family: Lobster
   // ignore: non_constant_identifier_names
-  final open_Sans = "Open_Sans";
+  final lobster = "Lobster";
 
-  /// font family: Roboto
+  /// font family: Pacifico
   // ignore: non_constant_identifier_names
-  final roboto = "Roboto";
+  final pacifico = "Pacifico";
+
+  /// font family: Sky_IconFont
+  // ignore: non_constant_identifier_names
+  final sky_IconFont = "Sky_IconFont";
+
+  /// font family: YorkFish_IconFont
+  // ignore: non_constant_identifier_names
+  final yorkFish_IconFont = "YorkFish_IconFont";
 
   /// font family: test_level_font
   // ignore: non_constant_identifier_names

@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyHomePage({Key? key, required this.title}) : super(key: key);
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
@@ -67,6 +67,11 @@ class _MyHomePageState extends State<MyHomePage> {
         });
   }
 
+  void _readTestText() async {
+    var rawString = await R.text.test_txt();
+    _alertMessage(rawString);
+  }
+
   void _readTestJson() async {
     var rawString = await R.text.test_json();
     _alertMessage(rawString);
@@ -85,7 +90,16 @@ class _MyHomePageState extends State<MyHomePage> {
     // The Flutter framework has been optimized to make rerunning build methods
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
-    var normalImageWidget = Image(width: 100, height: 100, image: R.image.test_only_main_asset());
+    var nonImpliedImageWidget_1 =
+        Image(width: 100, height: 100, image: R.image.test_only_main_asset_1());
+    var nonImpliedImageWidget_2 =
+        Image(width: 100, height: 100, image: R.image.test_png_variant_1());
+
+    var impliedImageWidget_1 =
+        Image(width: 100, height: 100, image: R.image.test_only_main_asset_2());
+    var impliedImageWidget_2 = Image(width: 100, height: 100, image: R.image.test_png_variant_2());
+
+    var jpgImageWidget = Image(width: 100, height: 100, image: R.image.test_jpg_variant_jpg());
 
     var svgImageWidget = Image(
       width: 100,
@@ -97,11 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
       image: R.image.test_sameName_gif(),
     );
 
-    var amiri_TextWidget_1 = Text("test Amiri 字体",
-        textAlign: TextAlign.center,
-        style: TextStyle(fontFamily: R.fontFamily.amiri, fontWeight: FontWeight.w900));
-
-    var amiri_TextWidget_2 = Text("test Amiri 字体",
+    var amiri_TextWidget = Text("test Amiri 字体",
         textAlign: TextAlign.center,
         style: TextStyle(
             fontFamily: R.fontFamily.amiri,
@@ -121,9 +131,6 @@ class _MyHomePageState extends State<MyHomePage> {
           fontStyle: FontStyle.normal,
         ));
 
-    var open_Sans_TextWidget = Text("test Open_Sans 字体",
-        textAlign: TextAlign.center, style: TextStyle(fontFamily: R.fontFamily.open_Sans));
-
     var dan_Zhai_Hang_Shu_Cai_TextWidget = Text("test Dan_Zhai_Hang_Shu_Cai 字体",
         textAlign: TextAlign.center,
         style: TextStyle(
@@ -131,9 +138,13 @@ class _MyHomePageState extends State<MyHomePage> {
             fontStyle: FontStyle.normal,
             fontWeight: FontWeight.w900));
 
-    var github_IconWidget = Icon(_MyIconData.github, color: Colors.blue);
-    var newYork_IconWidget = Icon(_MyIconData.newYork, color: Colors.red);
-    var fish_IconWidget = Icon(_MyIconData.fish, color: Colors.blue);
+    var github_IconWidget = Icon(_YorkFishIconData.github, color: Colors.blue);
+    var newYork_IconWidget = Icon(_YorkFishIconData.newYork, color: Colors.red);
+    var fish_IconWidget = Icon(_YorkFishIconData.fish, color: Colors.blue);
+
+    var sun_IconWidget = Icon(_SkyIconData.sun, color: Colors.blue);
+    var moon_IconWidget = Icon(_SkyIconData.moon, color: Colors.red);
+    var stars_IconWidget = Icon(_SkyIconData.stars, color: Colors.blue);
 
     return Scaffold(
       appBar: AppBar(
@@ -151,20 +162,30 @@ class _MyHomePageState extends State<MyHomePage> {
               "--- Test Image Resource ---",
               textAlign: TextAlign.center,
               style: TextStyle(
-                  fontFamily: R.fontFamily.roboto,
+                  fontFamily: R.fontFamily.lobster,
                   fontStyle: FontStyle.normal,
                   fontWeight: FontWeight.w900),
             ),
-            normalImageWidget,
+            nonImpliedImageWidget_1,
+            nonImpliedImageWidget_2,
+            impliedImageWidget_1,
+            impliedImageWidget_2,
+            jpgImageWidget,
             svgImageWidget,
             gifImageWidget,
             Text(
               "--- Test Text Resource ---",
               textAlign: TextAlign.center,
               style: TextStyle(
-                  fontFamily: R.fontFamily.roboto,
+                  fontFamily: R.fontFamily.lobster,
                   fontStyle: FontStyle.normal,
                   fontWeight: FontWeight.w900),
+            ),
+            CupertinoButton(
+              child: Text(
+                "read  test.text",
+              ),
+              onPressed: _readTestText,
             ),
             CupertinoButton(
               child: Text(
@@ -182,19 +203,29 @@ class _MyHomePageState extends State<MyHomePage> {
               "--- Test Font Resource ---",
               textAlign: TextAlign.center,
               style: TextStyle(
-                  fontFamily: R.fontFamily.roboto,
+                  fontFamily: R.fontFamily.pacifico,
                   fontStyle: FontStyle.normal,
                   fontWeight: FontWeight.w900),
             ),
-            amiri_TextWidget_1,
-            amiri_TextWidget_2,
+            amiri_TextWidget,
             baloo_Thambi_2_TextWidget,
             liu_Jian_Mao_Cao_TextWidget,
-            open_Sans_TextWidget,
             dan_Zhai_Hang_Shu_Cai_TextWidget,
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[github_IconWidget, newYork_IconWidget, fish_IconWidget],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[sun_IconWidget, moon_IconWidget, stars_IconWidget],
+            ),
+            Text(
+              "--- Ending ---",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  fontFamily: R.fontFamily.pacifico,
+                  fontStyle: FontStyle.normal,
+                  fontWeight: FontWeight.w900),
             ),
           ],
         ),
@@ -204,17 +235,38 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-class _MyIconData {
-  static String fontFamily = R.fontFamily.iconFont;
+class _YorkFishIconData {
+  static String fontFamily = R.fontFamily.yorkFish_IconFont;
 
-  // the unicode of icon see: lib/assets/fonts/IconFont/iconfont.json
+  // the unicode of icon see: lib/assets/fonts/YorkFish_IconFont/iconfont.json
 
   // github
-  static IconData github = IconData(0xe628, fontFamily: fontFamily, matchTextDirection: true);
+  static IconData github =
+      IconData(0xe628, fontFamily: fontFamily, fontPackage: null, matchTextDirection: true);
 
   // new york
-  static IconData newYork = IconData(0xe648, fontFamily: fontFamily, matchTextDirection: true);
+  static IconData newYork =
+      IconData(0xe648, fontFamily: fontFamily, fontPackage: null, matchTextDirection: true);
 
   // fish
-  static IconData fish = IconData(0xefd7, fontFamily: fontFamily, matchTextDirection: true);
+  static IconData fish =
+      IconData(0xefd7, fontFamily: fontFamily, fontPackage: null, matchTextDirection: true);
+}
+
+class _SkyIconData {
+  static String fontFamily = R.fontFamily.sky_IconFont;
+
+  // the unicode of icon see: assets/fonts/Sky_IconFont/iconfont.json
+
+  // sun
+  static IconData sun =
+      IconData(0xe659, fontFamily: fontFamily, fontPackage: null, matchTextDirection: true);
+
+  // moon
+  static IconData moon =
+      IconData(0xe6c3, fontFamily: fontFamily, fontPackage: null, matchTextDirection: true);
+
+  // stars
+  static IconData stars =
+      IconData(0xe63d, fontFamily: fontFamily, fontPackage: null, matchTextDirection: true);
 }

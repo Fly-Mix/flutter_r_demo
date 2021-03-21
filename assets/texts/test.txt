@@ -1,0 +1,5 @@
+Welcome to use Flr, you can get more details from:
+
+- https://github.com/Fly-Mix/flr-cli
+- https://github.com/Fly-Mix/flr-vscode-extension
+- https://github.com/Fly-Mix/flr-as-plugin
